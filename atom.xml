@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-05-09T00:30:37.000Z</updated>
+  <updated>2016-05-12T23:36:43.000Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客的迁移</title>
+    <link href="http://orionur.github.io/2016/05/10/3/"/>
+    <id>http://orionur.github.io/2016/05/10/3/</id>
+    <published>2016-05-11T00:15:28.000Z</published>
+    <updated>2016-05-12T23:36:43.000Z</updated>
+    
+    <content type="html">&lt;p&gt;由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac&lt;br&gt;网上很多如何在Mac上创建hexo的教程，我也就不重复太多&lt;br&gt;大家可以参考一下这个教程&lt;a href=&quot;http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac下搭建Hexo博客教程&lt;/a&gt;&lt;br&gt;大概讲一下我所遇到的问题&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;由于是第一次使用Mac，所以很多东西都不太懂&lt;br&gt;跟着教程走，安装git和安装node.js都没什么问题&lt;br&gt;可是在配置SSH的时候就出问题了&lt;br&gt;当我生成新的key文件后，他要求打开id_rsa.pub文件，复制里面的SSH key到Github&lt;br&gt;可是我怎么也找不到id_rsa.pub文件&lt;br&gt;后来经过搜索，原来是在terminal里输入&lt;code&gt;open .ssh&lt;/code&gt;进入.ssh文件夹&lt;br&gt;&lt;font color=&quot;blue&quot;&gt;注意: 必须是在与之前生成新key相同的目录下&lt;/font&gt;&lt;br&gt;之后就能成功连接到Github了&lt;/li&gt;
+&lt;li&gt;遇到第二个问题是安装Hexo，不知道为什么一直提示出错&lt;br&gt;后来使用&lt;code&gt;sudo&lt;/code&gt;命令在root权限下成功&lt;br&gt;之后就没什么其他大的问题了&lt;/li&gt;
+&lt;li&gt;第三个问题是，我把原来我windows里hexo的文件全部拷贝过来替换&lt;br&gt;但是在执行&lt;code&gt;hexo s&lt;/code&gt;的时候会出现一些error的信息&lt;br&gt;虽然不影响什么，但看着就是不爽&lt;br&gt;这时候只要重新&lt;code&gt;hexo g&lt;/code&gt;一下就ok&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;至此，我的blog迁移到此为止，至此以后我会在MacBook上写博客&lt;br&gt;对于OS系统还在研究中，软件工具什么的也在筛选过程中&lt;br&gt;之后会把一些心得体会贴上来，以供参考&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac&lt;br&gt;网上很多如何在Mac上创建hexo的教程，我也就不重复太多&lt;br&gt;大家可以参考一下这个教程&lt;a href=&quot;http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程&quot;&gt;Mac下搭建Hexo博客教程&lt;/a&gt;&lt;br&gt;大概讲一下我所遇到的问题&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="日常" scheme="http://orionur.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="github" scheme="http://orionur.github.io/tags/github/"/>
+    
+      <category term="hexo" scheme="http://orionur.github.io/tags/hexo/"/>
+    
+      <category term="mac" scheme="http://orionur.github.io/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>北大题库ACM</title>
@@ -64,7 +98,7 @@
     <link href="http://orionur.github.io/2016/04/28/1/"/>
     <id>http://orionur.github.io/2016/04/28/1/</id>
     <published>2016-04-29T04:54:34.000Z</published>
-    <updated>2016-05-09T00:30:37.000Z</updated>
+    <updated>2016-05-11T01:23:43.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;总算搞定了&quot;&gt;&lt;a href=&quot;#总算搞定了&quot; class=&quot;headerlink&quot; title=&quot;总算搞定了&quot;&gt;&lt;/a&gt;总算搞定了&lt;/h2&gt;&lt;p&gt;辞职后，一直沉迷于游戏，在痛定思痛下，决定找些技术帖来看看锻炼一下自己的技术水平&lt;br&gt;无意中找到几个技术博客，觉得这样弄个博客似乎也挺不错的&lt;br&gt;不但可以记录自己的一些心得体会，同时也算是一种鞭策于自我督促吧&lt;br&gt;于是也打算搭一个博客来玩玩&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -82,7 +116,7 @@
     
     </summary>
     
-      <category term="随笔生活" scheme="http://orionur.github.io/categories/%E9%9A%8F%E7%AC%94%E7%94%9F%E6%B4%BB/"/>
+      <category term="日常" scheme="http://orionur.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
       <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
