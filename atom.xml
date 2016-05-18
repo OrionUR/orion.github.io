@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-05-18T22:08:37.000Z</updated>
+  <updated>2016-05-18T22:14:33.000Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -14,6 +14,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac软件推荐－MPV</title>
+    <link href="http://orionur.github.io/2016/05/18/7/"/>
+    <id>http://orionur.github.io/2016/05/18/7/</id>
+    <published>2016-05-18T22:14:02.000Z</published>
+    <updated>2016-05-18T22:14:33.000Z</updated>
+    
+    <content type="html">&lt;p&gt;某只宠物说&lt;code&gt;欲奴&lt;/code&gt;出了，于是打算下载下来一起看&lt;br&gt;然后才想起这台电脑还没有安装播放器&lt;br&gt;搜索了一遍，发现mpv是大家都推崇的播放器&lt;br&gt;一番研究下来，分享一下自己的心得&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先当然是安装&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install mpv --with-bundle&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew linkapps mpv&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;第一条命令是安装mpv，第二条是在应用程序里创建一个mpv的快捷方式&lt;br&gt;现在你可以用mpv观看视频了&lt;br&gt;mpv是一个极其简约的视频软件&lt;br&gt;没有用户界面去设置，一切都需要自己去敲代码设置&lt;br&gt;首先输入&lt;code&gt;nano ~/.config/mpv/mpv.conf&lt;/code&gt;来配置一下mpv&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;screenshot-template=~/Desktop/mpv-screenshot-%n&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screenshot-format=jpg&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;no-border&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;autofit-larger=100%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sub-auto=fuzzy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vo=opengl-hd:interpolation:icc-profile-auto&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;save-position-on-quit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;从上往下总共7行，我逐一解释解释&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;截图存放地址，我设置成存放到桌面，并且命名为mpv-screenshot-%n&lt;br&gt;其中%n的意思是递增的数，从1开始&lt;/li&gt;
+&lt;li&gt;截图保存的格式，我设置为jpg&lt;/li&gt;
+&lt;li&gt;无边框，反正mpv的界面那么丑，去掉反而还好看一些&lt;/li&gt;
+&lt;li&gt;播放器最大宽高为屏幕宽高，这样就不会因为视频比屏幕分辨率大而导致的显示不完全&lt;/li&gt;
+&lt;li&gt;字幕自动加载，默认是跟视频名完全相同&lt;/li&gt;
+&lt;li&gt;使用OpenGL-HD来渲染视频，&lt;code&gt;interpolation&lt;/code&gt;是减少镜头平移时的顿挫感的参数&lt;/li&gt;
+&lt;li&gt;退出并保存播放位置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;大致上是这样的了，还是很多其他的设置参数，具体可以参考&lt;a href=&quot;https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外在mpv上操作基本上都是靠快捷键，没有菜单可以选择&lt;br&gt;以下是一些常用的快捷键&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Space&lt;/code&gt;播放/暂停&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Up&lt;/code&gt;快进60秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Down&lt;/code&gt;回退60秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Left&lt;/code&gt;回退5秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Right&lt;/code&gt;快进5秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;j&lt;/code&gt;循环选择字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;J&lt;/code&gt;反向循环选择字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt;循环切换音轨&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f&lt;/code&gt;切换全屏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;T&lt;/code&gt;切换视频是否总在最前&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;视频截图，包含字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;S&lt;/code&gt;视频截图，不含字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + s&lt;/code&gt;自动逐帧视频截图，再按一次停止截图&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;前进到下一帧&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;,&lt;/code&gt;后退到下一帧&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;9&lt;/code&gt;音量－2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0&lt;/code&gt;音量＋2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[&lt;/code&gt;0.0901倍慢速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;]&lt;/code&gt;1.1倍快速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;/code&gt;0.5倍慢速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;}&lt;/code&gt;2倍快速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Delete&lt;/code&gt;重置为正常播放速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;mpv支持自定义修改快捷键，只需要新建&lt;code&gt;~/.config/mpv/input.conf&lt;/code&gt;即可&lt;br&gt;创建方式跟上边一样&lt;br&gt;文档&lt;a href=&quot;https://github.com/mpv-player/mpv-blob/master/etc/input.conf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mpv keybindings&lt;/a&gt;是默认快捷键的配置&lt;br&gt;可以参考其中的内容并且根据自己的使用习惯来更改快捷键&lt;/p&gt;
+&lt;p&gt;最后推荐一个大神写的lua脚本，可以实现一些比较方便的功能&lt;br&gt;具体可以查看他的这篇&lt;a href=&quot;https://songchenwen.com/tech/2015/05/09/mpv-player/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;全能高效的播放器mpv&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://intxt.net/meet-mpv/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MPV播放器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://songchenwen.com/tech/2015/05/09/mpv-player/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;全能高效的播放器mpv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mpv options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mpv-player/mpv-blob/master/etc/input.conf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mpv keybindings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;某只宠物说&lt;code&gt;欲奴&lt;/code&gt;出了，于是打算下载下来一起看&lt;br&gt;然后才想起这台电脑还没有安装播放器&lt;br&gt;搜索了一遍，发现mpv是大家都推崇的播放器&lt;br&gt;一番研究下来，分享一下自己的心得&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
+    
+    
+      <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
+    
+      <category term="MPV" scheme="http://orionur.github.io/tags/MPV/"/>
+    
+  </entry>
   
   <entry>
     <title>自定义terminal的提示符</title>
