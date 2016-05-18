@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-05-15T05:32:06.000Z</updated>
+  <updated>2016-05-18T01:56:38.000Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -16,26 +16,212 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CLion小技巧</title>
-    <link href="http://orionur.github.io/2016/05/14/4/"/>
-    <id>http://orionur.github.io/2016/05/14/4/</id>
-    <published>2016-05-15T05:04:53.000Z</published>
-    <updated>2016-05-15T05:32:06.000Z</updated>
+    <title></title>
+    <link href="http://orionur.github.io/2016/05/17/7_reset/"/>
+    <id>http://orionur.github.io/2016/05/17/7_reset/</id>
+    <published>2016-05-18T01:56:38.000Z</published>
+    <updated>2016-05-18T01:56:38.000Z</updated>
     
-    <content type="html">&lt;p&gt;这里纪录一些我用CLion的心得技巧&lt;br&gt;主要针对OS X，Windows和Linux不会涉及&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    <content type="html">&lt;p&gt;某只宠物说&lt;code&gt;欲奴&lt;/code&gt;出了，于是打算下载下来一起看&lt;br&gt;然后才想起这台电脑还没有安装播放器&lt;br&gt;搜索了一遍，发现mpv是大家都推崇的播放器&lt;br&gt;一番研究下来，分享一下自己的心得&lt;/p&gt;
+&lt;p&gt;首先当然是安装&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install mpv --with-bundle&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew linkapps mpv&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;第一条命令是安装mpv，第二条是在应用程序里创建一个mpv的快捷方式&lt;br&gt;现在你可以用mpv观看视频了&lt;br&gt;mpv是一个极其简约的视频软件&lt;br&gt;没有用户界面去设置，一切都需要自己去敲代码设置&lt;br&gt;首先输入&lt;code&gt;nano ~/.config/mpv/mpv.conf&lt;/code&gt;来配置一下mpv&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;screenshot-template=~/Desktop/mpv-screenshot-%n&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;screenshot-format=jpg&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;no-border&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;autofit-larger=100%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sub-auto=fuzzy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vo=opengl-hd:interpolation:icc-profile-auto&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;save-position-on-quit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;从上往下总共7行，我逐一解释解释&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;截图存放地址，我设置成存放到桌面，并且命名为mpv-screenshot-%n&lt;br&gt;其中%n的意思是递增的数，从1开始&lt;/li&gt;
+&lt;li&gt;截图保存的格式，我设置为jpg&lt;/li&gt;
+&lt;li&gt;无边框，反正mpv的界面那么丑，去掉反而还好看一些&lt;/li&gt;
+&lt;li&gt;播放器最大宽高为屏幕宽高，这样就不会因为视频比屏幕分辨率大而导致的显示不完全&lt;/li&gt;
+&lt;li&gt;字幕自动加载，默认是跟视频名完全相同&lt;/li&gt;
+&lt;li&gt;使用OpenGL-HD来渲染视频，&lt;code&gt;interpolation&lt;/code&gt;是减少镜头平移时的顿挫感的参数&lt;/li&gt;
+&lt;li&gt;退出并保存播放位置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;大致上是这样的了，还是很多其他的设置参数，具体可以参考&lt;a href=&quot;https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外在mpv上操作基本上都是靠快捷键，没有菜单可以选择&lt;br&gt;以下是一些常用的快捷键&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;对齐缩进（Align Indentation）：&lt;code&gt;CMD + Alt + L&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Space&lt;/code&gt;播放/暂停&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Up&lt;/code&gt;快进60秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Down&lt;/code&gt;回退60秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Left&lt;/code&gt;回退5秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Right&lt;/code&gt;快进5秒&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;j&lt;/code&gt;循环选择字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;J&lt;/code&gt;反向循环选择字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;#&lt;/code&gt;循环切换音轨&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f&lt;/code&gt;切换全屏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;T&lt;/code&gt;切换视频是否总在最前&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;视频截图，包含字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;S&lt;/code&gt;视频截图，不含字幕&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Option + s&lt;/code&gt;自动逐帧视频截图，再按一次停止截图&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;前进到下一帧&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;,&lt;/code&gt;后退到下一帧&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;9&lt;/code&gt;音量－2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0&lt;/code&gt;音量＋2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[&lt;/code&gt;0.0901倍慢速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;]&lt;/code&gt;1.1倍快速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;/code&gt;0.5倍慢速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;}&lt;/code&gt;2倍快速播放&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Delete&lt;/code&gt;重置为正常播放速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;mpv支持自定义修改快捷键，只需要新建&lt;code&gt;~/.config/mpv/input.conf&lt;/code&gt;即可&lt;br&gt;创建方式跟上边一样&lt;br&gt;文档&lt;a href=&quot;https://github.com/mpv-player/mpv-blob/master/etc/input.conf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mpv keybindings&lt;/a&gt;是默认快捷键的配置&lt;br&gt;可以参考其中的内容并且根据自己的使用习惯来更改快捷键&lt;/p&gt;
+&lt;p&gt;最后推荐一个大神写的lua脚本，可以实现一些比较方便的功能&lt;br&gt;具体可以查看他的这篇&lt;a href=&quot;https://songchenwen.com/tech/2015/05/09/mpv-player/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文章&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://intxt.net/meet-mpv/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MPV播放器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://songchenwen.com/tech/2015/05/09/mpv-player/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;全能高效的播放器mpv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mpv options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mpv-player/mpv-blob/master/etc/input.conf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mpv keybindings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;这里纪录一些我用CLion的心得技巧&lt;br&gt;主要针对OS X，Windows和Linux不会涉及&lt;/p&gt;
+      &lt;p&gt;某只宠物说&lt;code&gt;欲奴&lt;/code&gt;出了，于是打算下载下来一起看&lt;br&gt;然后才想起这台电脑还没有安装播放器&lt;br&gt;搜索了一遍，发现mpv是大家都推崇的播放器&lt;br&gt;一番研究下来，分享一下自己的心得&lt;/p&gt;
+&lt;p&gt;首先当然是安装&lt;br&gt;&lt;figure class=&quot;hig
     
     </summary>
     
-      <category term="技巧纪录" scheme="http://orionur.github.io/categories/%E6%8A%80%E5%B7%A7%E7%BA%AA%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://orionur.github.io/2016/05/17/6_reset/"/>
+    <id>http://orionur.github.io/2016/05/17/6_reset/</id>
+    <published>2016-05-17T23:40:49.000Z</published>
+    <updated>2016-05-18T00:33:35.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Mac的terminal挺好用的，这种输入命令来执行各种强大的功能&lt;br&gt;让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）&lt;br&gt;但的确让我爱不释手&lt;br&gt;可是有个问题&lt;br&gt;每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西&lt;br&gt;毕竟还是在学习阶段，很多东西都需要重复去看&lt;br&gt;可是那一片黑底白字的命令让我有点眼花缭乱&lt;br&gt;上网搜了一下，有可以自定义终端提示符，于是尝试了一下&lt;br&gt;结果如下图&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这里简单说明一下&lt;br&gt;&lt;code&gt;Gundam&lt;/code&gt;是我的主机名，&lt;code&gt;Orion&lt;/code&gt;是我的用户名，&lt;code&gt;~&lt;/code&gt;是当前路径&lt;br&gt;这些所有都可以自己编辑修改的&lt;br&gt;也就是说，终端提示符想怎么改怎么改，随你自己喜欢&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有些人觉得自己的主机名很奇怪，想修改的话很简单&lt;br&gt;输入&lt;code&gt;sudo scutil --set HostName xxx&lt;/code&gt;，其中xxx为你想修改成的名字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;直接在命令提示符输入&lt;code&gt;nano ~/.bash_profile&lt;/code&gt;会进入一个文本编辑器&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg&quot; alt=&quot;&quot;&gt;&lt;center&gt;大概长这样&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;以上的是我的自定义的代码，我简单解释一下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;export PS1=&amp;quot;xxx&amp;quot;&lt;/code&gt;是将PS1这个控制提示符内容色彩显示的参数输出&lt;br&gt;简单来说，就是执行这个参数所设定的颜色，来改变终端提示符&lt;br&gt;要注意的是，&lt;strong&gt;这个是必不可缺并且不能修改的&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\[\e[0;xxm\]&lt;/code&gt;是一个颜色参数，其实xx是数字，代表不同的颜色，其中&lt;ul&gt;
+&lt;li&gt;黑色&lt;code&gt;30&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;红色&lt;code&gt;31&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;绿色&lt;code&gt;32&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;黄色&lt;code&gt;33&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;蓝色&lt;code&gt;34&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;紫色&lt;code&gt;35&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;蓝绿色&lt;code&gt;36&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;白色&lt;code&gt;37&lt;/code&gt;&lt;br&gt;有一个特殊的&lt;code&gt;\e[0m\]&lt;/code&gt;是默认颜色，也就是不改变颜色，用默认的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;还有一些显示参数&lt;ul&gt;
+&lt;li&gt;换行&lt;code&gt;\n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当前日期&lt;code&gt;\d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当前时间（24小时制）&lt;code&gt;\t&lt;/code&gt;（大写显示12小时制）&lt;/li&gt;
+&lt;li&gt;主机名（短）&lt;code&gt;\h&lt;/code&gt;（大写会显示全称）&lt;/li&gt;
+&lt;li&gt;用户名&lt;code&gt;\u&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;提示符（root用户显示#，普通用户显示$）&lt;code&gt;\$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当前目录（短）&lt;code&gt;\w&lt;/code&gt;（大写会显示全称）&lt;br&gt;还有一些其他的命令，具体可以自己Google搜索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此上边我的自定义PS1可以解读为&lt;br&gt;&lt;code&gt;[蓝绿色]主机名[黄色]@[紫色]用户名[绿色]:当前目录[红色] $[默认颜色]&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最后添加一个默认颜色代码，是让以后自己输入以及显示的字符为原来的颜色&lt;br&gt;如果不添加的话，后边都会跟随之前的设定的颜色&lt;br&gt;这里如果我不设定，我自己输入的命令也好，输出显示的东西也好，都会变成红色&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;输入完成后，直接&lt;code&gt;Crl + X&lt;/code&gt;选择退出&lt;br&gt;程序会问你是否保存，直接&lt;code&gt;Y&lt;/code&gt;选择确认&lt;br&gt;如果是第一次建立这个文件，会询问你文件的文件名是什么&lt;br&gt;我们建立文件的时候有输入文件名bash_profile&lt;br&gt;所以直接按回车确认即可&lt;/p&gt;
+&lt;p&gt;然后就大功告成了&lt;br&gt;以后可以很清楚的找到哪些是自己输入的命令，哪些是显示的信息&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mac的terminal挺好用的，这种输入命令来执行各种强大的功能&lt;br&gt;让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）&lt;br&gt;但的确让我爱不释手&lt;br&gt;可是有个问题&lt;br&gt;每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西&lt;br&gt;毕竟还是在学习阶段，很多
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac下安装以及管理软件</title>
+    <link href="http://orionur.github.io/2016/05/17/5/"/>
+    <id>http://orionur.github.io/2016/05/17/5/</id>
+    <published>2016-05-17T18:58:08.000Z</published>
+    <updated>2016-05-18T02:16:53.000Z</updated>
+    
+    <content type="html">&lt;p&gt;OS X的系统跟Windows完全不一样&lt;br&gt;首先体现在软件的安装以及管理上边&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;在Windows上安装软件首先需要去找那个软件的安装包&lt;br&gt;然后再下载下来选择安装的地方&lt;br&gt;而OS则并不需要那样&lt;br&gt;一般来说安装软件人们可能会选择去AppStore去下载安装&lt;br&gt;但实质上，由于AppStore上的审核时间过长，生态圈不完整，限制太多以及维护成本过高&lt;br&gt;让很多应用开发者被迫离开&lt;br&gt;很多软件已经出到很后的版本，但在App Store上，还是老版本&lt;br&gt;于是，brew和brew-cask应运而生&lt;br&gt;诚然，在命令终端上安装以及管理软件对很多人（尤其是妹纸）来说并不是那么的友好&lt;br&gt;不过，这也因此提供了些机会给学计算机的理工男（承诺只修电脑，绝不过夜，欢迎来电咨询）&lt;/p&gt;
+&lt;p&gt;在安装brew以及brew-cask之前，必须先安装Xcode&lt;br&gt;现在Xcode的安装直接去App Store搜索安装即可，很方便&lt;br&gt;完成后打开&lt;code&gt;terminal&lt;/code&gt;&lt;br&gt;输入&lt;code&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&amp;quot;&lt;/code&gt;&lt;br&gt;就会开始自动安装brew&lt;br&gt;结束后再输入&lt;code&gt;brew tap phinze/homebrew-cask &amp;amp;&amp;amp; brew install brew-cask&lt;/code&gt;&lt;br&gt;也是开始自动安装brew-cask&lt;br&gt;这样一来brew和brew-cask也就安装完毕&lt;/p&gt;
+&lt;p&gt;brew和brew-cask的区别，其实就是面向对象的不同&lt;br&gt;由于brew是下载源码解压然后配置以及安装，同时回包含相关依存库&lt;br&gt;并且自动配置好各种环境变量，而且易于卸载&lt;br&gt;因此brew对于程序员来说简直就是福音&lt;br&gt;简单的指令，就能快速安装和升级本地的各种开发环境&lt;br&gt;而brew-cask是下载已经编译好了的应用宝（.dmg/.pkg）&lt;br&gt;然后解压并且放在统一的目录中（/opt/homebrew-cask/Caskroom）&lt;br&gt;省去自己去寻找，下载，解压，拖拽等一系列步骤&lt;br&gt;并且卸载同样容易且干净&lt;br&gt;同时还能找到很多AppStore上没有或者最新的版本的软件&lt;br&gt;因此一般用户使用brew-cask安装软件即可&lt;br&gt;如果brew-cask上找不到想要的程序再去brew上找&lt;/p&gt;
+&lt;p&gt;安装命令什么的十分简单&lt;br&gt;输入&lt;code&gt;brew cask install xxx&lt;/code&gt;就可以安装xxx软件&lt;br&gt;至于要查询这个软件是否在brew-cask上，可以输入&lt;code&gt;brew cask search xxx&lt;/code&gt;&lt;br&gt;这样brew-cask会自动搜寻库中与xxx相匹配的软件&lt;br&gt;之后输入&lt;code&gt;brew cask info xxx&lt;/code&gt;可以查看该软件的详细信息，包括版本，是否已安装&lt;br&gt;卸载软件也十分简单，输入&lt;code&gt;brew cask uninstall xxx&lt;/code&gt;就可以很好地卸载&lt;br&gt;想查看已经装了什么软件，可以输入&lt;code&gt;brew cask list&lt;/code&gt;来查看&lt;br&gt;常用的命令就以上几个，还有一些其他的命令，可以直接输入&lt;code&gt;brew cask&lt;/code&gt;来查看&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f3yzy4amllj20w40ik10r.jpg&quot; alt=&quot;brew cask&quot;&gt;&lt;br&gt;至于brew的命令，其实跟brew-cask是一样的，输入&lt;code&gt;brew&lt;/code&gt;替换&lt;code&gt;brew cask&lt;/code&gt;即可&lt;/p&gt;
+&lt;p&gt;至于软件的更新，目前只有两种方法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;软件自己的更新选项&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;brew cask uninstall xxx &amp;amp;&amp;amp; brew cask install xxx&lt;/code&gt;先卸载再重新安装来实现更新软件&lt;blockquote&gt;
+&lt;p&gt;第二种方法去更新例如QQ这样的软件是否会导致聊天记录之类的历史纪录丢失&lt;br&gt;我没去测试过（懒得测试）&lt;br&gt;不过现在大部分的软件都有搜索更新的功能，可以实现自动更新，因此也不必太纠结&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;OS X的系统跟Windows完全不一样&lt;br&gt;首先体现在软件的安装以及管理上边&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
+    
+    
+      <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
+    
+      <category term="Brew" scheme="http://orionur.github.io/tags/Brew/"/>
+    
+      <category term="Brew-Cask" scheme="http://orionur.github.io/tags/Brew-Cask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快捷键合集</title>
+    <link href="http://orionur.github.io/2016/05/14/4/"/>
+    <id>http://orionur.github.io/2016/05/14/4/</id>
+    <published>2016-05-15T05:04:53.000Z</published>
+    <updated>2016-05-18T02:01:10.000Z</updated>
+    
+    <content type="html">&lt;p&gt;这里纪录一些我使用各种软件以及操作系统上的快捷键，以此来简化操作&lt;br&gt;主要针对OS X，Windows和Linux不会涉及&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;OS-X&quot;&gt;&lt;a href=&quot;#OS-X&quot; class=&quot;headerlink&quot; title=&quot;OS X&quot;&gt;&lt;/a&gt;OS X&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;新增邮件&lt;code&gt;Cmd + Sf + I&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;选取文字翻译&lt;code&gt;Cmd + Crl + D&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全屏截图&lt;code&gt;Cmd + Sf + 3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;范围截图&lt;code&gt;Cmd + Sf + 4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;隐藏窗口&lt;code&gt;Cmd + H&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;清倒废纸篓&lt;code&gt;Cmd + Sf + Del&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;删除光标后一个字符&lt;code&gt;Fn + Del&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Chrome&quot;&gt;&lt;a href=&quot;#Chrome&quot; class=&quot;headerlink&quot; title=&quot;Chrome&quot;&gt;&lt;/a&gt;Chrome&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;新建标签页&lt;code&gt;Cmd + T&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在后台打开链接&lt;code&gt;Cmd + 目标&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;打开链接并跳转&lt;code&gt;Cmd + Sf + 目标&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重新打开关闭的标签页&lt;code&gt;Cmd + Sf + T&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关闭标签页&lt;code&gt;Cmd + W&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;向左移动标签页&lt;code&gt;Cmd + Op + Left&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;向右移动标签页&lt;code&gt;Cmd + Op + Right&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;打开历史纪录&lt;code&gt;Cmd + Y&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;切换到地址栏&lt;code&gt;Cmd + L&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;刷新&lt;code&gt;Cmd + R&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查找&lt;code&gt;Cmd + F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查找下一条&lt;code&gt;Cmd + G&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查找上一条&lt;code&gt;Sf + Enter&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;CLion&quot;&gt;&lt;a href=&quot;#CLion&quot; class=&quot;headerlink&quot; title=&quot;CLion&quot;&gt;&lt;/a&gt;CLion&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;对齐缩进（Align Indentation）：&lt;code&gt;CMD + Op + L&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这里纪录一些我使用各种软件以及操作系统上的快捷键，以此来简化操作&lt;br&gt;主要针对OS X，Windows和Linux不会涉及&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
     
     
       <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
@@ -49,7 +235,7 @@
     <link href="http://orionur.github.io/2016/05/10/3/"/>
     <id>http://orionur.github.io/2016/05/10/3/</id>
     <published>2016-05-11T00:15:28.000Z</published>
-    <updated>2016-05-15T23:31:45.000Z</updated>
+    <updated>2016-05-18T02:00:33.000Z</updated>
     
     <content type="html">&lt;p&gt;由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac&lt;br&gt;网上很多如何在Mac上创建hexo的教程，我也就不重复太多&lt;br&gt;大家可以参考一下这个教程&lt;a href=&quot;http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac下搭建Hexo博客教程&lt;/a&gt;&lt;br&gt;大概讲一下我所遇到的问题&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -68,12 +254,12 @@
     
     </summary>
     
-      <category term="日常" scheme="http://orionur.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="Life" scheme="http://orionur.github.io/categories/Life/"/>
     
-    
-      <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
     
       <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
     
       <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
     
@@ -84,13 +270,12 @@
     <link href="http://orionur.github.io/2016/05/07/2/"/>
     <id>http://orionur.github.io/2016/05/07/2/</id>
     <published>2016-05-07T23:01:19.000Z</published>
-    <updated>2016-05-15T06:06:40.000Z</updated>
+    <updated>2016-05-18T02:00:24.000Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;这篇是记录我在北大题库ACM解题的一个博文，简单的直接贴代码&lt;br&gt;有些难度的我会附上解释以及一些解题思路&lt;br&gt;希望这篇博文可以持续更新&lt;br&gt;并记录一下我从开始到完成需要的时间&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;这篇是记录我在北大题库ACM解题的一个博文，简单的直接贴代码&lt;br&gt;有些难度的我会附上解释以及一些解题思路&lt;br&gt;希望这篇博文可以持续更新&lt;br&gt;并记录一下我从开始到完成需要的时间&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;http://poj.org/problemlist&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;北大ACM题库地址&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h3&gt;&lt;h4 id=&quot;自动缩进&quot;&gt;&lt;a href=&quot;#自动缩进&quot; class=&quot;headerlink&quot; title=&quot;自动缩进&quot;&gt;&lt;/a&gt;自动缩进&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;有时候修改代码的时候，会让缩进变得混乱，不美观&lt;br&gt;这时候只要全选代码，先按Ctrl + K，再按Ctrl + F就可以实现自动缩进&lt;/p&gt;
@@ -112,14 +297,11 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;这篇是记录我在北大题库ACM解题的一个博文，简单的直接贴代码&lt;br&gt;有些难度的我会附上解释以及一些解题思路&lt;br&gt;希望这篇博文可以持续更新&lt;br&gt;并记录一下我从开始到完成需要的时间&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://poj.org/problemlist&quot;&gt;北大ACM题库地址&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;这篇是记录我在北大题库ACM解题的一个博文，简单的直接贴代码&lt;br&gt;有些难度的我会附上解释以及一些解题思路&lt;br&gt;希望这篇博文可以持续更新&lt;br&gt;并记录一下我从开始到完成需要的时间&lt;br&gt;
     
     </summary>
     
-      <category term="刷题" scheme="http://orionur.github.io/categories/%E5%88%B7%E9%A2%98/"/>
+      <category term="Problems" scheme="http://orionur.github.io/categories/Problems/"/>
     
     
       <category term="C++" scheme="http://orionur.github.io/tags/C/"/>
@@ -131,16 +313,22 @@
     <link href="http://orionur.github.io/2016/04/28/1/"/>
     <id>http://orionur.github.io/2016/04/28/1/</id>
     <published>2016-04-29T04:54:34.000Z</published>
-    <updated>2016-05-11T01:23:43.000Z</updated>
+    <updated>2016-05-18T01:59:47.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;总算搞定了&quot;&gt;&lt;a href=&quot;#总算搞定了&quot; class=&quot;headerlink&quot; title=&quot;总算搞定了&quot;&gt;&lt;/a&gt;总算搞定了&lt;/h2&gt;&lt;p&gt;辞职后，一直沉迷于游戏，在痛定思痛下，决定找些技术帖来看看锻炼一下自己的技术水平&lt;br&gt;无意中找到几个技术博客，觉得这样弄个博客似乎也挺不错的&lt;br&gt;不但可以记录自己的一些心得体会，同时也算是一种鞭策于自我督促吧&lt;br&gt;于是也打算搭一个博客来玩玩&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;blockquote&gt;
 &lt;p&gt;由于我的系统是Windows，因此此文仅针对与探讨在Windows环境下遇到的问题&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://zipperary.com/2013/05/28/hexo-guide-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zippera&lt;/a&gt;的这篇文章写得其实已经挺清楚了，不过也许是旧版本的问题，不太适合现在新的版本&lt;br&gt;我在安装调试搭建的时候都没有遇到问题，deploy也成功，可是在GitHub上死活都是404&lt;br&gt;网上苦寻无果，在我即将放弃的时候，我看到了这篇&lt;a href=&quot;https://xuanwo.org/2015/03/26/hexo-intor/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;blog&lt;/a&gt;&lt;br&gt;里面说到要激活GitHub上&lt;code&gt;GitHub Pages&lt;/code&gt;，我才灵光一闪&lt;br&gt;另外的是，我的英文名是Orion，可是GitHub上Orion被注册了&lt;br&gt;我退而求其次，注册OrionUR作为我的用户名，而UR是University of Regina的缩写&lt;br&gt;也就是我在加拿大毕业的学校&lt;br&gt;但是我新建的 repository，地址却是orion.github.io&lt;br&gt;因此虽然上边我激活了&lt;code&gt;GitHub Pages&lt;/code&gt;，可依然404&lt;br&gt;直到我把地址改为&lt;a href=&quot;&quot;&gt;orionur.github.io&lt;/a&gt;，才真正成功&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://zipperary.com/2013/05/28/hexo-guide-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zippera&lt;/a&gt;的这篇文章写得其实已经挺清楚了，不过也许是旧版本的问题，不太适合现在新的版本&lt;br&gt;我在安装调试搭建的时候都没有遇到问题，deploy也成功，可是在GitHub上死活都是404&lt;br&gt;网上苦寻无果，在我即将放弃的时候，我看到了这篇&lt;a href=&quot;https://xuanwo.org/2015/03/26/hexo-intor/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;blog&lt;/a&gt;&lt;br&gt;里面说到要激活GitHub上&lt;code&gt;GitHub Pages&lt;/code&gt;，我才灵光一闪&lt;br&gt;另外的是，我的英文名是Orion，可是GitHub上Orion被注册了&lt;br&gt;我退而求其次，注册OrionUR作为我的用户名，而UR是University of Regina的缩写&lt;br&gt;也就是我在加拿大毕业的学校&lt;br&gt;但是我新建的 repository，地址却是orion.github.io&lt;br&gt;因此虽然上边我激活了&lt;code&gt;GitHub Pages&lt;/code&gt;，可依然404&lt;br&gt;直到我把地址改为&lt;a href=&quot;http://orionur.github.io&quot;&gt;orionur.github.io&lt;/a&gt;，才真正成功&lt;/p&gt;
 &lt;p&gt;到此为止，我的博客终于在GitHub上安家了&lt;br&gt;至于搞不搞独立域名，这就要看心情了&lt;br&gt;主题也顺利解决，当中没有出什么意外，剩下的也就是个性优化以及小微调&lt;/p&gt;
 &lt;p&gt;最后，为我的博客的成立，撒花~~~&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://zipperary.com/2013/05/28/hexo-guide-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zippera&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://xuanwo.org/2015/03/26/hexo-intor/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;史上最详细的Hexo博客搭建图文教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
@@ -149,12 +337,12 @@
     
     </summary>
     
-      <category term="日常" scheme="http://orionur.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="Life" scheme="http://orionur.github.io/categories/Life/"/>
     
-    
-      <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
     
       <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
     
   </entry>
   
