@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-05-18T22:14:33.000Z</updated>
+  <updated>2016-05-18T23:11:11.000Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://orionur.github.io/2016/05/18/7/"/>
     <id>http://orionur.github.io/2016/05/18/7/</id>
     <published>2016-05-18T22:14:02.000Z</published>
-    <updated>2016-05-18T22:14:33.000Z</updated>
+    <updated>2016-05-18T23:11:11.000Z</updated>
     
     <content type="html">&lt;p&gt;某只宠物说&lt;code&gt;欲奴&lt;/code&gt;出了，于是打算下载下来一起看&lt;br&gt;然后才想起这台电脑还没有安装播放器&lt;br&gt;搜索了一遍，发现mpv是大家都推崇的播放器&lt;br&gt;一番研究下来，分享一下自己的心得&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;首先当然是安装&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install mpv --with-bundle&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew linkapps mpv&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -289,9 +289,9 @@
       <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
     
     
-      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
     
       <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
     
@@ -374,9 +374,9 @@
       <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
     
     
-      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
     
       <category term="Windows" scheme="http://orionur.github.io/tags/Windows/"/>
     
