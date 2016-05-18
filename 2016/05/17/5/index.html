@@ -66,7 +66,7 @@
 <meta property="og:site_name" content="Orion's Blog">
 <meta property="og:description" content="OS X的系统跟Windows完全不一样首先体现在软件的安装以及管理上边">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/badbf5f3gw1f3yzy4amllj20w40ik10r.jpg">
-<meta property="og:updated_time" content="2016-05-18T02:16:53.000Z">
+<meta property="og:updated_time" content="2016-05-18T02:36:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下安装以及管理软件">
 <meta name="twitter:description" content="OS X的系统跟Windows完全不一样首先体现在软件的安装以及管理上边">
@@ -333,7 +333,7 @@
         <p>OS X的系统跟Windows完全不一样<br>首先体现在软件的安装以及管理上边<br><a id="more"></a><br>在Windows上安装软件首先需要去找那个软件的安装包<br>然后再下载下来选择安装的地方<br>而OS则并不需要那样<br>一般来说安装软件人们可能会选择去AppStore去下载安装<br>但实质上，由于AppStore上的审核时间过长，生态圈不完整，限制太多以及维护成本过高<br>让很多应用开发者被迫离开<br>很多软件已经出到很后的版本，但在App Store上，还是老版本<br>于是，brew和brew-cask应运而生<br>诚然，在命令终端上安装以及管理软件对很多人（尤其是妹纸）来说并不是那么的友好<br>不过，这也因此提供了些机会给学计算机的理工男（承诺只修电脑，绝不过夜，欢迎来电咨询）</p>
 <p>在安装brew以及brew-cask之前，必须先安装Xcode<br>现在Xcode的安装直接去App Store搜索安装即可，很方便<br>完成后打开<code>terminal</code><br>输入<code>ruby -e &quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&quot;</code><br>就会开始自动安装brew<br>结束后再输入<code>brew tap phinze/homebrew-cask &amp;&amp; brew install brew-cask</code><br>也是开始自动安装brew-cask<br>这样一来brew和brew-cask也就安装完毕</p>
 <p>brew和brew-cask的区别，其实就是面向对象的不同<br>由于brew是下载源码解压然后配置以及安装，同时回包含相关依存库<br>并且自动配置好各种环境变量，而且易于卸载<br>因此brew对于程序员来说简直就是福音<br>简单的指令，就能快速安装和升级本地的各种开发环境<br>而brew-cask是下载已经编译好了的应用宝（.dmg/.pkg）<br>然后解压并且放在统一的目录中（/opt/homebrew-cask/Caskroom）<br>省去自己去寻找，下载，解压，拖拽等一系列步骤<br>并且卸载同样容易且干净<br>同时还能找到很多AppStore上没有或者最新的版本的软件<br>因此一般用户使用brew-cask安装软件即可<br>如果brew-cask上找不到想要的程序再去brew上找</p>
-<p>安装命令什么的十分简单<br>输入<code>brew cask install xxx</code>就可以安装xxx软件<br>至于要查询这个软件是否在brew-cask上，可以输入<code>brew cask search xxx</code><br>这样brew-cask会自动搜寻库中与xxx相匹配的软件<br>之后输入<code>brew cask info xxx</code>可以查看该软件的详细信息，包括版本，是否已安装<br>卸载软件也十分简单，输入<code>brew cask uninstall xxx</code>就可以很好地卸载<br>想查看已经装了什么软件，可以输入<code>brew cask list</code>来查看<br>常用的命令就以上几个，还有一些其他的命令，可以直接输入<code>brew cask</code>来查看<br><img src="http://ww3.sinaimg.cn/large/badbf5f3gw1f3yzy4amllj20w40ik10r.jpg" alt="brew cask"><br>至于brew的命令，其实跟brew-cask是一样的，输入<code>brew</code>替换<code>brew cask</code>即可</p>
+<p>安装命令什么的十分简单<br>输入<code>brew cask install xxx</code>就可以安装xxx软件<br>至于要查询这个软件是否在brew-cask上，可以输入<code>brew cask search xxx</code><br>这样brew-cask会自动搜寻库中与xxx相匹配的软件<br>之后输入<code>brew cask info xxx</code>可以查看该软件的详细信息，包括版本，是否已安装<br>卸载软件也十分简单，输入<code>brew cask uninstall xxx</code>就可以很好地卸载<br>想查看已经装了什么软件，可以输入<code>brew cask list</code>来查看<br>常用的命令就以上几个，还有一些其他的命令，可以直接输入<code>brew cask</code>来查看<br><img src="http://ww3.sinaimg.cn/large/badbf5f3gw1f3yzy4amllj20w40ik10r.jpg" alt="brew cask">至于brew的命令，其实跟brew-cask是一样的，输入<code>brew</code>替换<code>brew cask</code>即可</p>
 <p>至于软件的更新，目前只有两种方法</p>
 <ol>
 <li>软件自己的更新选项</li>
@@ -342,6 +342,12 @@
 </blockquote>
 </li>
 </ol>
+<hr>
+<p><strong>参考文献</strong></p>
+<ul>
+<li><a href="https://ksmx.me/homebrew-cask-cli-workflow-to-install-mac-applications" target="_blank" rel="external">简介优雅的Mac OS X软件安装体验 - homebrew-cask</a></li>
+<li><a href="http://www.ysbookg.com/wljs/2821.html" target="_blank" rel="external">brew安装使用教程</a></li>
+</ul>
 
       
     </div>
@@ -376,10 +382,6 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/17/6_reset/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +453,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -459,7 +461,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -468,7 +470,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
