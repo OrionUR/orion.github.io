@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-05-18T02:36:47.000Z</updated>
+  <updated>2016-05-18T22:08:37.000Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -16,16 +16,83 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>自定义terminal的提示符</title>
+    <link href="http://orionur.github.io/2016/05/18/6/"/>
+    <id>http://orionur.github.io/2016/05/18/6/</id>
+    <published>2016-05-18T22:07:37.000Z</published>
+    <updated>2016-05-18T22:08:37.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Mac的terminal挺好用的，这种输入命令来执行各种强大的功能&lt;br&gt;让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）&lt;br&gt;但的确让我爱不释手&lt;br&gt;可是有个问题&lt;br&gt;每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西&lt;br&gt;毕竟还是在学习阶段，很多东西都需要重复去看&lt;br&gt;可是那一片黑底白字的命令让我有点眼花缭乱&lt;br&gt;上网搜了一下，有可以自定义终端提示符，于是尝试了一下&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;结果如下图&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这里简单说明一下&lt;br&gt;&lt;code&gt;Gundam&lt;/code&gt;是我的主机名，&lt;code&gt;Orion&lt;/code&gt;是我的用户名，&lt;code&gt;~&lt;/code&gt;是当前路径&lt;br&gt;这些所有都可以自己编辑修改的&lt;br&gt;也就是说，终端提示符想怎么改怎么改，随你自己喜欢&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有些人觉得自己的主机名很奇怪，想修改的话很简单&lt;br&gt;输入&lt;code&gt;sudo scutil --set HostName xxx&lt;/code&gt;，其中xxx为你想修改成的名字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;直接在命令提示符输入&lt;code&gt;nano ~/.bash_profile&lt;/code&gt;会进入一个文本编辑器&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg&quot; alt=&quot;&quot;&gt;&lt;center&gt;大概长这样&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;以上的是我的自定义的代码，我简单解释一下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;export PS1=&amp;quot;xxx&amp;quot;&lt;/code&gt;是将PS1这个控制提示符内容色彩显示的参数输出&lt;br&gt;简单来说，就是执行这个参数所设定的颜色，来改变终端提示符&lt;br&gt;要注意的是，&lt;strong&gt;这个是必不可缺并且不能修改的&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\[\e[0;xxm\]&lt;/code&gt;是一个颜色参数，其实xx是数字，代表不同的颜色，其中&lt;ul&gt;
+&lt;li&gt;黑色&lt;code&gt;30&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;红色&lt;code&gt;31&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;绿色&lt;code&gt;32&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;黄色&lt;code&gt;33&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;蓝色&lt;code&gt;34&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;紫色&lt;code&gt;35&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;蓝绿色&lt;code&gt;36&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;白色&lt;code&gt;37&lt;/code&gt;&lt;br&gt;有一个特殊的&lt;code&gt;\e[0m\]&lt;/code&gt;是默认颜色，也就是不改变颜色，用默认的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;还有一些显示参数&lt;ul&gt;
+&lt;li&gt;换行&lt;code&gt;\n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当前日期&lt;code&gt;\d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当前时间（24小时制）&lt;code&gt;\t&lt;/code&gt;（大写显示12小时制）&lt;/li&gt;
+&lt;li&gt;主机名（短）&lt;code&gt;\h&lt;/code&gt;（大写会显示全称）&lt;/li&gt;
+&lt;li&gt;用户名&lt;code&gt;\u&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;提示符（root用户显示#，普通用户显示$）&lt;code&gt;\$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;当前目录（短）&lt;code&gt;\w&lt;/code&gt;（大写会显示全称）&lt;br&gt;还有一些其他的命令，具体可以自己Google搜索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此上边我的自定义PS1可以解读为&lt;br&gt;&lt;code&gt;[蓝绿色]主机名[黄色]@[紫色]用户名[绿色]:当前目录[红色] $[默认颜色]&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最后添加一个默认颜色代码，是让以后自己输入以及显示的字符为原来的颜色&lt;br&gt;如果不添加的话，后边都会跟随之前的设定的颜色&lt;br&gt;这里如果我不设定，我自己输入的命令也好，输出显示的东西也好，都会变成红色&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;输入完成后，直接&lt;code&gt;Crl + X&lt;/code&gt;选择退出&lt;br&gt;程序会问你是否保存，直接&lt;code&gt;Y&lt;/code&gt;选择确认&lt;br&gt;如果是第一次建立这个文件，会询问你文件的文件名是什么&lt;br&gt;我们建立文件的时候有输入文件名bash_profile&lt;br&gt;所以直接按回车确认即可&lt;/p&gt;
+&lt;p&gt;然后就大功告成了&lt;br&gt;以后可以很清楚的找到哪些是自己输入的命令，哪些是显示的信息&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://imwuyu.me/talk-about/modify-mac-osx-terminal-prompt-and-color.html/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;给Terminal施点魔法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_76c853c20100ucpe.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MAC+iTerm定制目录显示颜色和提示符&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mac的terminal挺好用的，这种输入命令来执行各种强大的功能&lt;br&gt;让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）&lt;br&gt;但的确让我爱不释手&lt;br&gt;可是有个问题&lt;br&gt;每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西&lt;br&gt;毕竟还是在学习阶段，很多东西都需要重复去看&lt;br&gt;可是那一片黑底白字的命令让我有点眼花缭乱&lt;br&gt;上网搜了一下，有可以自定义终端提示符，于是尝试了一下&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
+    
+    
+      <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac下安装以及管理软件</title>
     <link href="http://orionur.github.io/2016/05/17/5/"/>
     <id>http://orionur.github.io/2016/05/17/5/</id>
     <published>2016-05-17T18:58:08.000Z</published>
-    <updated>2016-05-18T02:36:47.000Z</updated>
+    <updated>2016-05-18T03:04:00.000Z</updated>
     
-    <content type="html">&lt;p&gt;OS X的系统跟Windows完全不一样&lt;br&gt;首先体现在软件的安装以及管理上边&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;在Windows上安装软件首先需要去找那个软件的安装包&lt;br&gt;然后再下载下来选择安装的地方&lt;br&gt;而OS则并不需要那样&lt;br&gt;一般来说安装软件人们可能会选择去AppStore去下载安装&lt;br&gt;但实质上，由于AppStore上的审核时间过长，生态圈不完整，限制太多以及维护成本过高&lt;br&gt;让很多应用开发者被迫离开&lt;br&gt;很多软件已经出到很后的版本，但在App Store上，还是老版本&lt;br&gt;于是，brew和brew-cask应运而生&lt;br&gt;诚然，在命令终端上安装以及管理软件对很多人（尤其是妹纸）来说并不是那么的友好&lt;br&gt;不过，这也因此提供了些机会给学计算机的理工男（承诺只修电脑，绝不过夜，欢迎来电咨询）&lt;/p&gt;
-&lt;p&gt;在安装brew以及brew-cask之前，必须先安装Xcode&lt;br&gt;现在Xcode的安装直接去App Store搜索安装即可，很方便&lt;br&gt;完成后打开&lt;code&gt;terminal&lt;/code&gt;&lt;br&gt;输入&lt;code&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&amp;quot;&lt;/code&gt;&lt;br&gt;就会开始自动安装brew&lt;br&gt;结束后再输入&lt;code&gt;brew tap phinze/homebrew-cask &amp;amp;&amp;amp; brew install brew-cask&lt;/code&gt;&lt;br&gt;也是开始自动安装brew-cask&lt;br&gt;这样一来brew和brew-cask也就安装完毕&lt;/p&gt;
-&lt;p&gt;brew和brew-cask的区别，其实就是面向对象的不同&lt;br&gt;由于brew是下载源码解压然后配置以及安装，同时回包含相关依存库&lt;br&gt;并且自动配置好各种环境变量，而且易于卸载&lt;br&gt;因此brew对于程序员来说简直就是福音&lt;br&gt;简单的指令，就能快速安装和升级本地的各种开发环境&lt;br&gt;而brew-cask是下载已经编译好了的应用宝（.dmg/.pkg）&lt;br&gt;然后解压并且放在统一的目录中（/opt/homebrew-cask/Caskroom）&lt;br&gt;省去自己去寻找，下载，解压，拖拽等一系列步骤&lt;br&gt;并且卸载同样容易且干净&lt;br&gt;同时还能找到很多AppStore上没有或者最新的版本的软件&lt;br&gt;因此一般用户使用brew-cask安装软件即可&lt;br&gt;如果brew-cask上找不到想要的程序再去brew上找&lt;/p&gt;
-&lt;p&gt;安装命令什么的十分简单&lt;br&gt;输入&lt;code&gt;brew cask install xxx&lt;/code&gt;就可以安装xxx软件&lt;br&gt;至于要查询这个软件是否在brew-cask上，可以输入&lt;code&gt;brew cask search xxx&lt;/code&gt;&lt;br&gt;这样brew-cask会自动搜寻库中与xxx相匹配的软件&lt;br&gt;之后输入&lt;code&gt;brew cask info xxx&lt;/code&gt;可以查看该软件的详细信息，包括版本，是否已安装&lt;br&gt;卸载软件也十分简单，输入&lt;code&gt;brew cask uninstall xxx&lt;/code&gt;就可以很好地卸载&lt;br&gt;想查看已经装了什么软件，可以输入&lt;code&gt;brew cask list&lt;/code&gt;来查看&lt;br&gt;常用的命令就以上几个，还有一些其他的命令，可以直接输入&lt;code&gt;brew cask&lt;/code&gt;来查看&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f3yzy4amllj20w40ik10r.jpg&quot; alt=&quot;brew cask&quot;&gt;至于brew的命令，其实跟brew-cask是一样的，输入&lt;code&gt;brew&lt;/code&gt;替换&lt;code&gt;brew cask&lt;/code&gt;即可&lt;/p&gt;
+    <content type="html">&lt;p&gt;OS X的系统跟Windows完全不一样，首先体现在软件的安装以及管理上边&lt;/p&gt;
+&lt;p&gt;在Windows上安装软件首先需要去找那个软件的安装包&lt;br&gt;然后再下载下来选择安装的地方&lt;br&gt;而OS则并不需要那样&lt;br&gt;一般来说安装软件人们可能会选择去AppStore去下载安装&lt;br&gt;但实质上，由于AppStore上的审核时间过长，生态圈不完整，限制太多以及维护成本过高&lt;br&gt;让很多应用开发者被迫离开&lt;br&gt;很多软件已经出到很后的版本，但在App Store上，还是老版本&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;于是，brew和brew-cask应运而生&lt;br&gt;诚然，在命令终端上安装以及管理软件对很多人（尤其是妹纸）来说并不是那么的友好&lt;br&gt;不过，这也因此提供了些机会给学计算机的理工男（承诺只修电脑，绝不过夜，欢迎来电咨询）&lt;/p&gt;
+&lt;p&gt;在安装brew以及brew-cask之前，必须先安装Xcode&lt;br&gt;现在Xcode的安装直接去App Store搜索安装即可，很方便&lt;br&gt;完成后打开&lt;code&gt;terminal&lt;/code&gt;&lt;br&gt;输入&lt;code&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)&amp;quot;&lt;/code&gt;&lt;br&gt;就会开始自动安装brew&lt;br&gt;结束后再输入&lt;code&gt;brew tap phinze/homebrew-cask &amp;amp;&amp;amp; brew install brew-cask&lt;/code&gt;&lt;br&gt;也是开始自动安装brew-cask&lt;br&gt;这样一来brew和brew-cask也就安装完毕。&lt;/p&gt;
+&lt;p&gt;brew和brew-cask的区别，其实就是面向对象的不同&lt;br&gt;由于brew是下载源码解压然后配置以及安装，同时回包含相关依存库&lt;br&gt;并且自动配置好各种环境变量，而且易于卸载&lt;br&gt;因此brew对于程序员来说简直就是福音&lt;br&gt;简单的指令，就能快速安装和升级本地的各种开发环境&lt;br&gt;而brew-cask是下载已经编译好了的应用宝（.dmg/.pkg）&lt;br&gt;然后解压并且放在统一的目录中（/opt/homebrew-cask/Caskroom）&lt;br&gt;省去自己去寻找，下载，解压，拖拽等一系列步骤，并且卸载同样容易且干净&lt;br&gt;同时还能找到很多AppStore上没有或者最新的版本的软件&lt;br&gt;因此一般用户使用brew-cask安装软件即可&lt;br&gt;如果brew-cask上找不到想要的程序再去brew上找。&lt;/p&gt;
+&lt;p&gt;安装命令什么的十分简单&lt;br&gt;输入&lt;code&gt;brew cask install xxx&lt;/code&gt;就可以安装xxx软件&lt;br&gt;至于要查询这个软件是否在brew-cask上，可以输入&lt;code&gt;brew cask search xxx&lt;/code&gt;&lt;br&gt;这样brew-cask会自动搜寻库中与xxx相匹配的软件&lt;br&gt;之后输入&lt;code&gt;brew cask info xxx&lt;/code&gt;可以查看该软件的详细信息，包括版本，是否已安装&lt;br&gt;卸载软件也十分简单，输入&lt;code&gt;brew cask uninstall xxx&lt;/code&gt;就可以很好地卸载&lt;br&gt;想查看已经装了什么软件，可以输入&lt;code&gt;brew cask list&lt;/code&gt;来查看&lt;br&gt;常用的命令就以上几个，还有一些其他的命令，可以直接输入&lt;code&gt;brew cask&lt;/code&gt;来查看&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f3yzy4amllj20w40ik10r.jpg&quot; alt=&quot;brew cask&quot;&gt;至于brew的命令，其实跟brew-cask是一样的，把&lt;code&gt;brew&lt;/code&gt;替换掉&lt;code&gt;brew cask&lt;/code&gt;即可&lt;/p&gt;
 &lt;p&gt;至于软件的更新，目前只有两种方法&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;软件自己的更新选项&lt;/li&gt;
@@ -35,7 +102,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://ksmx.me/homebrew-cask-cli-workflow-to-install-mac-applications&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简介优雅的Mac OS X软件安装体验 - homebrew-cask&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.ysbookg.com/wljs/2821.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;brew安装使用教程&lt;/a&gt;&lt;/li&gt;
@@ -44,7 +111,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;OS X的系统跟Windows完全不一样&lt;br&gt;首先体现在软件的安装以及管理上边&lt;br&gt;
+      &lt;p&gt;OS X的系统跟Windows完全不一样，首先体现在软件的安装以及管理上边&lt;/p&gt;
+&lt;p&gt;在Windows上安装软件首先需要去找那个软件的安装包&lt;br&gt;然后再下载下来选择安装的地方&lt;br&gt;而OS则并不需要那样&lt;br&gt;一般来说安装软件人们可能会选择去AppStore去下载安装&lt;br&gt;但实质上，由于AppStore上的审核时间过长，生态圈不完整，限制太多以及维护成本过高&lt;br&gt;让很多应用开发者被迫离开&lt;br&gt;很多软件已经出到很后的版本，但在App Store上，还是老版本&lt;br&gt;
     
     </summary>
     
@@ -121,7 +189,7 @@
     <link href="http://orionur.github.io/2016/05/10/3/"/>
     <id>http://orionur.github.io/2016/05/10/3/</id>
     <published>2016-05-11T00:15:28.000Z</published>
-    <updated>2016-05-18T02:28:45.000Z</updated>
+    <updated>2016-05-18T03:03:44.000Z</updated>
     
     <content type="html">&lt;p&gt;由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac&lt;br&gt;网上很多如何在Mac上创建hexo的教程，我也就不重复太多&lt;br&gt;大家可以参考一下这个教程&lt;a href=&quot;http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac下搭建Hexo博客教程&lt;/a&gt;&lt;br&gt;大概讲一下我所遇到的问题&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -133,7 +201,7 @@
 &lt;/ul&gt;
 &lt;p&gt;至此，我的blog迁移到此为止，至此以后我会在MacBook上写博客&lt;br&gt;对于OS系统还在研究中，软件工具什么的也在筛选过程中&lt;br&gt;之后会把一些心得体会贴上来，以供参考&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac下搭建Hexo博客教程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -161,7 +229,7 @@
     <link href="http://orionur.github.io/2016/05/07/2/"/>
     <id>http://orionur.github.io/2016/05/07/2/</id>
     <published>2016-05-07T23:01:19.000Z</published>
-    <updated>2016-05-18T02:24:18.000Z</updated>
+    <updated>2016-05-18T02:56:32.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;这篇是记录我在北大题库ACM解题的一个博文，简单的直接贴代码&lt;br&gt;有些难度的我会附上解释以及一些解题思路&lt;br&gt;希望这篇博文可以持续更新&lt;br&gt;并记录一下我从开始到完成需要的时间&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -192,7 +260,7 @@
     
     </summary>
     
-      <category term="Problems" scheme="http://orionur.github.io/categories/Problems/"/>
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
     
     
       <category term="C++" scheme="http://orionur.github.io/tags/C/"/>
@@ -206,7 +274,7 @@
     <link href="http://orionur.github.io/2016/04/28/1/"/>
     <id>http://orionur.github.io/2016/04/28/1/</id>
     <published>2016-04-29T04:54:34.000Z</published>
-    <updated>2016-05-18T02:25:23.000Z</updated>
+    <updated>2016-05-18T03:03:27.000Z</updated>
     
     <content type="html">&lt;p&gt;辞职后，一直沉迷于游戏，在痛定思痛下，决定找些技术帖来看看锻炼一下自己的技术水平&lt;br&gt;无意中找到几个技术博客，觉得这样弄个博客似乎也挺不错的&lt;br&gt;不但可以记录自己的一些心得体会，同时也算是一种鞭策于自我督促吧&lt;br&gt;于是也打算搭一个博客来玩玩&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -217,7 +285,7 @@
 &lt;p&gt;到此为止，我的博客终于在GitHub上安家了&lt;br&gt;至于搞不搞独立域名，这就要看心情了&lt;br&gt;主题也顺利解决，当中没有出什么意外，剩下的也就是个性优化以及小微调&lt;/p&gt;
 &lt;p&gt;最后，为我的博客的成立，撒花~~~&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://zipperary.com/2013/05/28/hexo-guide-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zippera&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://xuanwo.org/2015/03/26/hexo-intor/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;史上最详细的Hexo博客搭建图文教程&lt;/a&gt;&lt;/li&gt;
