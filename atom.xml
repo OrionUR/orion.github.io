@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-06-02T23:52:05.000Z</updated>
+  <updated>2016-06-04T03:08:17.000Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>捣鼓Sublime Text 3</title>
+    <link href="http://orionur.github.io/2016/06/02/9/"/>
+    <id>http://orionur.github.io/2016/06/02/9/</id>
+    <published>2016-06-03T01:40:01.000Z</published>
+    <updated>2016-06-04T03:08:17.000Z</updated>
+    
+    <content type="html">&lt;p&gt;之前一直用的是Sublime Text 2，由于搜索的时候看到很多人说3好&lt;br&gt;于是打算捣鼓一下&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;本体&quot;&gt;&lt;a href=&quot;#本体&quot; class=&quot;headerlink&quot; title=&quot;本体&quot;&gt;&lt;/a&gt;本体&lt;/h3&gt;&lt;p&gt;首先遇到的问题是，brew-cask里没有Sublime Text 3&lt;br&gt;上网搜了下，找到了解决方法&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew tap caskroom/versions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew cask install sublime-text3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后问题又出现了&lt;br&gt;不知道为什么一直显示&lt;br&gt;&lt;code&gt;Warning: Unexpected method &amp;#39;appdir&amp;#39; called on Cask sublime-text3.&lt;/code&gt;&lt;br&gt;和&lt;br&gt;&lt;code&gt;Error: Download failed on Cask &amp;#39;sublime-text3&amp;#39; with message: Download failed: https://download.sublimetext.com/Sublime%20Text%20Build%203114.dmg&lt;/code&gt;&lt;br&gt;根据提示重新安装brew-cask并且更新brew&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew uninstall --force brew-cask&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;再然后重新安装&lt;code&gt;brew cask install sublime-text3&lt;/code&gt;成功&lt;/p&gt;
+&lt;h3 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h3&gt;&lt;p&gt;用Sublime Text 3最主要的也是因为它有非常丰富的插件&lt;br&gt;插件的安装一般都依赖于它本身的Package Control&lt;br&gt;关于如何安装具体可以参考&lt;a href=&quot;https://packagecontrol.io/installation&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;br&gt;这里我简单说一下&lt;br&gt;菜单栏view -&amp;gt; Show Console，底部会有个命令输入框，将下边的代码复制粘贴到输入框内回车即可&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;import urllib.request,os,hashlib; h = &amp;apos;2915d1851351e5ee549c20394736b442&amp;apos; + &amp;apos;8bc59f460fa1548d1514676163dafc88&amp;apos;; pf = &amp;apos;Package Control.sublime-package&amp;apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &amp;apos;http://packagecontrol.io/&amp;apos; + pf.replace(&amp;apos; &amp;apos;, &amp;apos;%20&amp;apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&amp;apos;Error validating download (got %s instead of %s), please try manual install&amp;apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &amp;apos;wb&amp;apos; ).write(by)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装好Package Control后，就可以使用快捷键&lt;code&gt;command + Shift + p&lt;/code&gt;来安装插件&lt;br&gt;在命令框内输入&lt;code&gt;pci&lt;/code&gt;能快速进入插件浏览界面&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f4htx1mqf6j20ed0a6t9q.jpg&quot; alt=&quot;pci&quot;&gt;&lt;br&gt;由于我现在用的也不是很久，也就引用一些大家都觉得比较好的插件&lt;br&gt;&lt;strong&gt;ConvertToUTF8&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;支持GBK, BIG5, EUC-KR, EUC-JP, Shift_JIS 等编码的插件&lt;br&gt;由于ST默认是使用UTF-8编码，但不支持其他类似GBK，CJK编码&lt;br&gt;有了这个插件，在打开对应ST不支持的编码文件的时候，会自动选择合适的编码转换&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DocBlockr&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DocBlockr可以自动生成PHPDoc风格的注释&lt;br&gt;它支持的语言有Javascript, PHP, ActionScript, CoffeeScript, Java, Objective C, C, C++&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Emmet&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;快速生成html代码段的插件，强大到无与伦比，可以超快速编写HTML/CSS/JS&lt;br&gt;web开发必备插件&lt;br&gt;这里推荐两个链接：&lt;a href=&quot;http://www.w3cplus.com/tools/using-emmet-speed-front-end-web-development.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Emmet加速Web前端开发&lt;/a&gt;，&lt;a href=&quot;http://www.yunxiu.org/blog/article/5490.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Emmet 插件使用教程（转载）&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SideBarEnhancements&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;侧边栏增强插件&lt;br&gt;这么说吧，原先ST的侧边栏就是A罩杯，有了这个插件就变成了H罩杯&lt;br&gt;默认ST不打开侧边栏，可以到View -&amp;gt; Side Bar -&amp;gt; Show Open File&lt;br&gt;之后可以通过快捷键&lt;code&gt;command + k&lt;/code&gt; &lt;code&gt;command + b&lt;/code&gt;来显示或者隐藏侧边栏&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;过多的插件会导致ST变慢变卡，请谨慎选择插件&lt;/code&gt;&lt;br&gt;至于删除插件，在Package Control中输入&lt;code&gt;remove package&lt;/code&gt;&lt;br&gt;然后选择要卸载的插件即可&lt;/p&gt;
+&lt;h3 id=&quot;小技巧&quot;&gt;&lt;a href=&quot;#小技巧&quot; class=&quot;headerlink&quot; title=&quot;小技巧&quot;&gt;&lt;/a&gt;小技巧&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;跳出自动补全&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由于ST有自动补全功能，可是每次当我输入完括号内的内容后，都要将右手小拇指移动到右键的位置&lt;br&gt;觉得超级麻烦，于是就找了找，发现可以用自定义快捷键的方法去实现&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&amp;quot;keys&amp;quot;: [&amp;quot;enter&amp;quot;], &amp;quot;command&amp;quot;: &amp;quot;move&amp;quot;, &amp;quot;args&amp;quot;: &amp;#123;&amp;quot;by&amp;quot;: &amp;quot;characters&amp;quot;, &amp;quot;forward&amp;quot;: true&amp;#125;, &amp;quot;context&amp;quot;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        [&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#123; &amp;quot;key&amp;quot;: &amp;quot;following_text&amp;quot;, &amp;quot;operator&amp;quot;: &amp;quot;regex_contains&amp;quot;, &amp;quot;operand&amp;quot;: &amp;quot;^[)\\]\\&amp;gt;\\&amp;apos;\\\&amp;quot;\\ %&amp;gt;\\&amp;#125;\\;\\,]&amp;quot;, &amp;quot;match_all&amp;quot;: true &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#123; &amp;quot;key&amp;quot;: &amp;quot;preceding_text&amp;quot;, &amp;quot;operator&amp;quot;: &amp;quot;not_regex_match&amp;quot;, &amp;quot;operand&amp;quot;: &amp;quot;^.*\\&amp;#123;$&amp;quot;, &amp;quot;match_all&amp;quot;: true  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#123; &amp;quot;key&amp;quot;: &amp;quot;auto_complete_visible&amp;quot;, &amp;quot;operator&amp;quot;: &amp;quot;equal&amp;quot;, &amp;quot;operand&amp;quot;: false &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;将以上的代码复制到Sublime Text -&amp;gt; Preferences -&amp;gt; Key Bindings - User&lt;br&gt;以后只要输入完内容后，按回车，就自动到引号后，非常方便&lt;/p&gt;
+&lt;h3 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h3&gt;&lt;p&gt;最后分享一个主题&lt;code&gt;One Dark Material&lt;/code&gt;，是仿Atom.io的UI主题&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/badbf5f3gw1f4ix7ypgs6j21hc0sigqc.jpg&quot; alt=&quot;One Dark Material&quot;&gt;&lt;br&gt;地址在这：&lt;a href=&quot;https://github.com/ptraceur/OneDarkMaterial&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;One Dark Material Theme&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;br&gt;&lt;a href=&quot;Warning: Unexpected method &amp;#39;appdir&amp;#39; called on Cask sublime-text3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;How to Install Sublime Text 3 using Homebrew&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/question/24736400&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sublime text 3 插件推荐？&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.jeffjade.com/2015/12/15/2015-04-17-toss-sublime-text/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何优雅地使用Sublime Text&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://guoqiao.me/post/2015/0110-sublime-text-config-for-mac-os-x&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mac OS X 上 Sublime Text 3 的配置&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ruby-china.org/topics/4824&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sublime 怎样跳出括号？&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ptraceur/OneDarkMaterial&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;One Dark Material Theme&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前一直用的是Sublime Text 2，由于搜索的时候看到很多人说3好&lt;br&gt;于是打算捣鼓一下&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
+    
+    
+      <category term="Sublime Text 3" scheme="http://orionur.github.io/tags/Sublime-Text-3/"/>
+    
+  </entry>
   
   <entry>
     <title>瞎扯淡</title>
@@ -59,8 +111,8 @@
   
   <entry>
     <title>致我唯一的狗狗</title>
-    <link href="http://orionur.github.io/2016/05/20/zoe/"/>
-    <id>http://orionur.github.io/2016/05/20/zoe/</id>
+    <link href="http://orionur.github.io/2016/05/19/zoe/"/>
+    <id>http://orionur.github.io/2016/05/19/zoe/</id>
     <published>2016-05-19T21:20:00.000Z</published>
     <updated>2016-05-19T21:16:36.000Z</updated>
     
@@ -220,8 +272,8 @@
   
   <entry>
     <title>Mac下安装以及管理软件</title>
-    <link href="http://orionur.github.io/2016/05/17/5/"/>
-    <id>http://orionur.github.io/2016/05/17/5/</id>
+    <link href="http://orionur.github.io/2016/05/16/5/"/>
+    <id>http://orionur.github.io/2016/05/16/5/</id>
     <published>2016-05-17T04:58:08.000Z</published>
     <updated>2016-05-18T03:04:00.000Z</updated>
     
@@ -353,9 +405,9 @@
       <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
     
     
-      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
     
       <category term="Mac" scheme="http://orionur.github.io/tags/Mac/"/>
     
@@ -438,9 +490,9 @@
       <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
     
     
-      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://orionur.github.io/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://orionur.github.io/tags/Hexo/"/>
     
       <category term="Windows" scheme="http://orionur.github.io/tags/Windows/"/>
     
