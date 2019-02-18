@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2019-02-18T06:10:26.954Z</updated>
+  <updated>2019-02-18T06:13:15.737Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://orionur.github.io/2019/02/17/11/"/>
     <id>http://orionur.github.io/2019/02/17/11/</id>
     <published>2019-02-17T07:51:12.000Z</published>
-    <updated>2019-02-18T06:10:26.954Z</updated>
+    <updated>2019-02-18T06:13:15.737Z</updated>
     
     <content type="html">&lt;p&gt;vgbaike的文明6百科挂了，找了一圈，没什么比较好的中文百科&lt;br&gt;索性自己弄一个，方便查找查看&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -392,7 +392,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#pasture&quot;&gt;牧场&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#camp&quot;&gt;营地&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#kurgan&quot;&gt;坟墩&lt;/a&gt;&lt;br&gt;&lt;font color=&quot;blue&quot;&gt;斯基泰&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;斯基泰&lt;/font&gt;&lt;br&gt;&lt;a href=&quot;#kurgan&quot;&gt;坟墩&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;允许收获&lt;a href=&quot;#cattle&quot;&gt;牛&lt;/a&gt;，&lt;a href=&quot;#sheep&quot;&gt;羊&lt;/a&gt;，&lt;a href=&quot;#deer&quot;&gt;鹿&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -418,7 +418,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;fishing_boats&quot;&gt;渔船&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#galley&quot;&gt;桨帆船&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#viking_longship&quot;&gt;维京长船&lt;/a&gt;&lt;br&gt;&lt;font color=&quot;blue&quot;&gt;挪威&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;挪威&lt;/font&gt;&lt;br&gt;&lt;a href=&quot;#viking_longship&quot;&gt;维京长船&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;在海岸边建造1座城市&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;允许建造者上船&lt;/td&gt;
 &lt;/tr&gt;
@@ -431,7 +431,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#stonehenge&quot;&gt;巨石阵&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#lavra&quot;&gt;拉弗拉修道院&lt;/a&gt;&lt;br&gt;&lt;font color=&quot;blue&quot;&gt;俄罗斯&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;俄罗斯&lt;/font&gt;&lt;br&gt;&lt;a href=&quot;#lavra&quot;&gt;拉弗拉修道院&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;发现1个自然奇观&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;/tr&gt;
@@ -444,7 +444,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#hanging_gardens&quot;&gt;空中花园&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#plantation&quot;&gt;种植园&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#stepwell&quot;&gt;梯井&lt;/a&gt;&lt;br&gt;&lt;font color=&quot;blue&quot;&gt;印度&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;印度&lt;/font&gt;&lt;br&gt;&lt;a href=&quot;#stepwell&quot;&gt;梯井&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;改良1种农产资源&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;可清理沼泽，并收获&lt;a href=&quot;#banana&quot;&gt;香蕉&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -483,7 +483,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#pyramids&quot;&gt;金字塔&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#battering&quot;&gt;破城槌&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#great_wall&quot;&gt;长城&lt;/a&gt;&lt;br&gt;&lt;font color=&quot;blue&quot;&gt;中国&lt;/font&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;中国&lt;/font&gt;&lt;br&gt;&lt;a href=&quot;#great_wall&quot;&gt;长城&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;建造1座采石场&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;允许收获&lt;a href=&quot;#stone&quot;&gt;石头&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
