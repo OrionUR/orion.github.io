@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2019-02-18T02:55:14.768Z</updated>
+  <updated>2019-02-18T03:25:09.637Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://orionur.github.io/2019/02/17/11/"/>
     <id>http://orionur.github.io/2019/02/17/11/</id>
     <published>2019-02-17T07:51:12.000Z</published>
-    <updated>2019-02-18T02:55:14.768Z</updated>
+    <updated>2019-02-18T03:25:09.637Z</updated>
     
     <content type="html">&lt;p&gt;vgbaike的文明6百科挂了，找了一圈，没什么比较好的中文百科&lt;br&gt;索性自己弄一个，方便查找查看&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -180,7 +180,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0a6rq1260j201c01cq2p.jpg&quot; alt=&quot;Greek2&quot;&gt;希腊&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0a6sedpsfj201c01ct8h.jpg&quot; alt=&quot;gorgo&quot;&gt;戈尔戈&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;塞莫皮莱&lt;/font&gt;&lt;br&gt;战斗胜利可获得等同于被击败单位战斗力50%的文化值&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;柏拉图的理想国&lt;/font&gt;&lt;br&gt;每种政体可获得一个额外的通配符槽位&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;font color=”red”&amp;gt;柏拉图的理想国&lt;br&gt;每种政体可获得一个额外的通配符槽位&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;重装步兵&lt;/font&gt;&lt;br&gt;远古时代单位，取代枪兵。与至少一个重装步兵单位相邻时+10战斗力&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;卫城&lt;/font&gt;&lt;br&gt;替代剧院广场，建造费用更低。建成后奖励1名使者。每个相邻市中心为其提供1点文化值加成。每个相邻奇观和区域为其提供1点文化值加成。只能建在丘陵上&lt;/td&gt;
 &lt;/tr&gt;
@@ -283,9 +283,9 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0a9ahfjgkj201c01cjr5.jpg&quot; alt=&quot;Persian&quot;&gt;波斯&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0a9arvdbuj201c01cq2p.jpg&quot; alt=&quot;cyrus&quot;&gt;居鲁士&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;巴比伦的陨落&lt;/font&gt;&lt;br&gt;对主要文明宣布突袭战争后的10回合内+2移动力。拥有驻扎单位的占领城市每回合的忠诚度+5。宣布突袭战争的好战性和厌战情绪与正式战争相同&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;行省总督&lt;/font&gt;&lt;br&gt;拥有“政治哲学”市政后，贸易路线容量+1。本国城市之间的路线+2金币，+1文化值。本国领土中的道路提升一个等级&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;长生军&lt;/font&gt;&lt;br&gt;古典时代单位，替代剑客。此近战单位可进行远程攻击，范围为2。防御力强&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;巴比伦的陨落&lt;/font&gt;&lt;br&gt;对主要文明宣布突袭战争后的10回合内+2移动力。拥有驻扎单位的占领城市每回合的忠诚度+5.宣布突袭战争的好战性和厌战情绪与正式战争相同&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;行省总督&lt;/font&gt;&lt;br&gt;拥有“政治哲学”市政后，贸易路线容量+1.本国城市之间的路线+2金币，+1文化值。本国领土中的道路提升一个等级&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;长生军&lt;/font&gt;&lt;br&gt;古典时代单位，替代剑客。此近战单位可进行远程攻击，范围为2.防御力强&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;波斯庭院&lt;/font&gt;&lt;br&gt;解锁建造者能力。+1文化值并+2金币，+2魅力。每个相邻圣地和剧院广场+1文化值。每个相邻商业中心和市中心+1金币。解锁更多科技和市政树后可提供更多文化值和旅游业绩。无法建在雪地、冻土、雪地丘陵或冻土丘陵上，也无法建在另一座波斯庭院旁&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -318,7 +318,7 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;班诺克本&lt;/font&gt;&lt;br&gt;解锁防御战术市政后即可宣布解放战争。宣布解放战争后的10回合内+100%生产力、+2移动力&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;苏格兰启蒙运动&lt;/font&gt;&lt;br&gt;幸福度为快乐的城市额外+5%科技值、+5%生产力。快乐的城市中每个学院+1大科学家点数、每个工业区+1大工程师点数。欣喜若狂的城市获得的加成将加倍&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;高地军团&lt;/font&gt;&lt;br&gt;工业时代单位，替代游骑兵。在丘陵和森林地貌作战时+5战斗力&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;高尔夫球场&lt;/font&gt;&lt;br&gt;解锁建造者能力。+1宜居度、+2金币。如与市中心区域相邻，则+1文化值；如与娱乐设施区域相邻，则+1文化值。解锁更多市政和科技后可获得更多旅游业绩和住房。无法建在沙漠或沙漠丘陵地貌上。每座城市仅限建造一座。拥有高尔夫球场的单元格无法切换，+1魅力&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;高尔夫球场&lt;/font&gt;&lt;br&gt;解锁建造者能力。+1宜居度、+2金币。如与市中心区域相邻，则+1文化值；如与娱乐设施区域相邻，则+1文化值。解锁更多市政和科技后可获得更多旅游业绩和住房。无法建在沙漠或沙漠丘陵地貌上。每座城市仅限建造一座。拥有高尔夫球场的单元格无法切换，+1魅力。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0ackoz77jj201c01ct8h.jpg&quot; alt=&quot;Scythian&quot;&gt;斯基泰&lt;/td&gt;
@@ -348,13 +348,46 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0ad7926c6j201c01ct8h.jpg&quot; alt=&quot;Zulu&quot;&gt;祖鲁&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/badbf5f3ly1g0ad7mq095j201c01cmwx.jpg&quot; alt=&quot;shaka&quot;&gt;恰卡&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;伊布托&lt;/font&gt;&lt;br&gt;可更早组建军团（需雇佣兵市政）和军队（需民族主义市政）。使军团和军队的基础战斗力额外+5&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;部落礼赞&lt;/font&gt;&lt;br&gt;拥有驻军单位的城市每回合忠诚度+3；如驻扎有军团或军队，则+5。如已解锁相关市政，用单位占领城市则可将其升级为军团或军队&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;部落礼赞&lt;/font&gt;&lt;br&gt;拥有驻军单位的城市每回合忠诚度+3；如驻扎有军团或军队，则+5.如已解锁相关市政，用单位占领城市则可将其升级为军团或军队&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;班图武士&lt;/font&gt;&lt;br&gt;中世纪单位，替代长矛兵。增加夹击加成，费用和维护费较低。经验值增长速度较快&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;伊坎达&lt;/font&gt;&lt;br&gt;替代军营。+1住房。解锁相应的市政或科技后即可生产军团和军队。创建军团和军队的速度更快&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;/font&gt;&lt;br&gt;|&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;科技树&quot;&gt;&lt;a href=&quot;#科技树&quot; class=&quot;headerlink&quot; title=&quot;科技树&quot;&gt;&lt;/a&gt;科技树&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;科技&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;费用&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;时代&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;解锁&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;尤里卡&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特殊解锁&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/84/Icon_tech_pottery.png/30px-Icon_tech_pottery.png?version=f3c38d36e2c4fdde540b107b0fbb04ee&quot; alt=&quot;pottery&quot;&gt;制陶术&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#granary&quot;&gt;粮仓&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;允许收获小麦，大米&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/6/6a/Icon_tech_animal_husbandry.png/30px-Icon_tech_animal_husbandry.png?version=9f3166c898cb728d67cda16a580e90b8&quot; alt=&quot;animal_husbandry&quot;&gt;畜牧业&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#pasture&quot;&gt;牧场&lt;/a&gt;，&lt;a href=&quot;#camp&quot;&gt;营地&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;#kurgan&quot;&gt;坟墩（斯基泰特色改良设施）&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;允许收获牛，羊，鹿&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;font color=&quot;red&quot;&gt;&lt;/font&gt;&lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </content>
     
     <summary type="html">
