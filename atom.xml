@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2019-02-18T05:27:09.283Z</updated>
+  <updated>2019-02-18T05:32:26.700Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://orionur.github.io/2019/02/17/11/"/>
     <id>http://orionur.github.io/2019/02/17/11/</id>
     <published>2019-02-17T07:51:12.000Z</published>
-    <updated>2019-02-18T05:27:09.283Z</updated>
+    <updated>2019-02-18T05:32:26.700Z</updated>
     
     <content type="html">&lt;p&gt;vgbaike的文明6百科挂了，找了一圈，没什么比较好的中文百科&lt;br&gt;索性自己弄一个，方便查找查看&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -359,7 +359,12 @@
 &lt;th style=&quot;text-align:center&quot;&gt;科技&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;费用&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;时代&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;解锁&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;区域&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;建筑&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;奇观&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;改良&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;单位&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特色&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;尤里卡&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;特殊解锁&lt;/th&gt;
 &lt;/tr&gt;
@@ -369,7 +374,12 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/84/Icon_tech_pottery.png/30px-Icon_tech_pottery.png?version=f3c38d36e2c4fdde540b107b0fbb04ee&quot; alt=&quot;pottery&quot;&gt;制陶术&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;建筑：&lt;a href=&quot;#granary&quot;&gt;粮仓&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#granary&quot;&gt;粮仓&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;允许收获&lt;a href=&quot;#wheat&quot;&gt;小麦&lt;/a&gt;，&lt;a href=&quot;#rice&quot;&gt;大米&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -377,7 +387,12 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/6/6a/Icon_tech_animal_husbandry.png/30px-Icon_tech_animal_husbandry.png?version=9f3166c898cb728d67cda16a580e90b8&quot; alt=&quot;animal_husbandry&quot;&gt;畜牧业&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;改良：&lt;a href=&quot;#pasture&quot;&gt;牧场&lt;/a&gt;，&lt;a href=&quot;#camp&quot;&gt;营地&lt;/a&gt;&lt;br&gt;特色：&lt;a href=&quot;#kurgan&quot;&gt;坟墩（斯基泰）&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#pasture&quot;&gt;牧场&lt;/a&gt; &lt;a href=&quot;#camp&quot;&gt;营地&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#kurgan&quot;&gt;坟墩（斯基泰）&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;允许收获&lt;a href=&quot;#cattle&quot;&gt;牛&lt;/a&gt;，&lt;a href=&quot;#sheep&quot;&gt;羊&lt;/a&gt;，&lt;a href=&quot;#deer&quot;&gt;鹿&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -385,7 +400,12 @@
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/80/Icon_tech_mining.png/30px-Icon_tech_mining.png?version=ba6748b12a0c90804ca42865d795d358&quot; alt=&quot;mining&quot;&gt;采矿业&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;改良：&lt;a href=&quot;#mine&quot;&gt;矿山&lt;/a&gt;，&lt;a href=&quot;#quarry&quot;&gt;采石场&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#mine&quot;&gt;矿山&lt;/a&gt; &lt;a href=&quot;#quarry&quot;&gt;采石场&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;允许砍伐树林和开采&lt;a href=&quot;copper&quot;&gt;铜&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
