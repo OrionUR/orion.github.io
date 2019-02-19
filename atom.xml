@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2019-02-18T23:52:35.594Z</updated>
+  <updated>2019-02-19T00:39:21.775Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://orionur.github.io/2019/02/17/11/"/>
     <id>http://orionur.github.io/2019/02/17/11/</id>
     <published>2019-02-17T07:51:12.000Z</published>
-    <updated>2019-02-18T23:52:35.594Z</updated>
+    <updated>2019-02-19T00:39:21.775Z</updated>
     
     <content type="html">&lt;p&gt;vgbaike的文明6百科挂了，找了一圈，没什么比较好的中文百科&lt;br&gt;索性自己弄一个，方便查找查看&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;table&gt;
+&lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h1&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#leaders&quot;&gt;文明领袖&lt;/a&gt;&lt;/th&gt;
@@ -360,7 +360,6 @@
 &lt;tr&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;科技&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;费用&lt;/th&gt;
-&lt;th style=&quot;text-align:center&quot;&gt;时代&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;区域&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;建筑&lt;/th&gt;
 &lt;th style=&quot;text-align:center&quot;&gt;奇观&lt;/th&gt;
@@ -375,7 +374,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/84/Icon_tech_pottery.png/30px-Icon_tech_pottery.png?version=f3c38d36e2c4fdde540b107b0fbb04ee&quot; alt=&quot;pottery&quot;&gt;制陶术&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -388,7 +386,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/6/6a/Icon_tech_animal_husbandry.png/30px-Icon_tech_animal_husbandry.png?version=9f3166c898cb728d67cda16a580e90b8&quot; alt=&quot;animal_husbandry&quot;&gt;畜牧业&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -401,7 +398,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/80/Icon_tech_mining.png/30px-Icon_tech_mining.png?version=ba6748b12a0c90804ca42865d795d358&quot; alt=&quot;mining&quot;&gt;采矿业&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;25&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -414,7 +410,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/a/a0/Icon_tech_sailing.png/30px-Icon_tech_sailing.png?version=80622248ab499f8644055899aff1fe28&quot; alt=&quot;sailing&quot;&gt;航海术&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;50&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -427,7 +422,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/9/9e/Icon_tech_astrology.png/30px-Icon_tech_astrology.png?version=4fdf9dfaa627b46d20e4c3723a0462f8&quot; alt=&quot;astrology&quot;&gt;占星术&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;50&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#holy_site&quot;&gt;圣地&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#shrine&quot;&gt;神社&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#stonehenge&quot;&gt;巨石阵&lt;/a&gt;&lt;/td&gt;
@@ -440,7 +434,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/5/5c/Icon_tech_irrigation.png/30px-Icon_tech_irrigation.png?version=5715ef3300ab2ab7f14c67dd39d11e1a&quot; alt=&quot;irrigation&quot;&gt;灌溉&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;50&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#hanging_gardens&quot;&gt;空中花园&lt;/a&gt;&lt;/td&gt;
@@ -453,7 +446,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/4/46/Icon_tech_writing.png/30px-Icon_tech_writing.png?version=c8f9648d06ed87c5d6f7df732c1cabac&quot; alt=&quot;writing&quot;&gt;写作&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;50&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#campus&quot;&gt;学院&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#library&quot;&gt;图书馆&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -466,7 +458,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/a/a9/Icon_tech_archery.png/30px-Icon_tech_archery.png?version=3f9bf07db0d3600f3f27bab803ed9fcb&quot; alt=&quot;archery&quot;&gt;箭术&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;50&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#temple_of_artemis&quot;&gt;阿尔忒弥斯神庙&lt;/a&gt;&lt;/td&gt;
@@ -479,7 +470,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/b/b2/Icon_tech_masonry.png/30px-Icon_tech_masonry.png?version=ff3eee0d55d07783032cdf6c2f2d38ef&quot; alt=&quot;masonry&quot;&gt;砌砖&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;80&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#ancient_walls&quot;&gt;远古城墙&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#pyramids&quot;&gt;金字塔&lt;/a&gt;&lt;/td&gt;
@@ -492,7 +482,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/2/26/Icon_tech_bronze_working.png/30px-Icon_tech_bronze_working.png?version=b7de6a810b9a5fb4818032ba4c47e6f2&quot; alt=&quot;bronze_working&quot;&gt;铸铜术&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;80&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#encampment&quot;&gt;军营&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#barracks&quot;&gt;兵营&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -505,7 +494,6 @@
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/86/Icon_tech_wheel.png/30px-Icon_tech_wheel.png?version=5af5e801c9b4eabec2da36a407157acb&quot; alt=&quot;wheel&quot;&gt;轮子&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;80&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;远古时代&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#water_mill&quot;&gt;水磨&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
@@ -520,6 +508,144 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;h3 id=&quot;古典时代&quot;&gt;&lt;a href=&quot;#古典时代&quot; class=&quot;headerlink&quot; title=&quot;古典时代&quot;&gt;&lt;/a&gt;古典时代&lt;/h3&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;科技&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;费用&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;区域&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;建筑&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;奇观&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;改良&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;单位&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特色&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;尤里卡&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特殊解锁&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/c/c9/Icon_tech_celestial_navigation.png/30px-Icon_tech_celestial_navigation.png?version=e3d5ea9038571db4c4c09793643cd845&quot; alt=&quot;celestial_navigation&quot;&gt;天文导航&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;144&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#harbor&quot;&gt;港口&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#lighthouse&quot;&gt;灯塔&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#great_lighthouse&quot;&gt;大灯塔&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;改良2处海洋资源&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;可使商人上船，并收获&lt;a href=&quot;#fish&quot;&gt;鱼&lt;/a&gt;和&lt;a href=&quot;#crab&quot;&gt;螃蟹&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/b/bf/Icon_tech_currency.png/30px-Icon_tech_currency.png?version=4c575cdc8584b07a8fde39a8fa712d0c&quot; alt=&quot;currency&quot;&gt;货币&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;144&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#commercial_hub&quot;&gt;商业中心&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#market&quot;&gt;纺织会馆&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建立1条贸易路线&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/e/e1/Icon_tech_horseback_riding.png/30px-Icon_tech_horseback_riding.png?version=cd10e5fdc9638c0ef7b3e0fd5d521c67&quot; alt=&quot;horseback_riding&quot;&gt;骑马&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;144&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#stable&quot;&gt;马厩&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#horseman&quot;&gt;骑手&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造1座牧场&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/7/79/Icon_tech_iron_working.png/30px-Icon_tech_iron_working.png?version=ffa5ab26b205a0471f7b73350da2c43c&quot; alt=&quot;iron_working&quot;&gt;炼铁术&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;144&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#jebel_barkal&quot;&gt;博尔戈尔山&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#swordsman&quot;&gt;剑客&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造1座铁矿&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/9/9f/Icon_tech_shipbuilding.png/30px-Icon_tech_shipbuilding.png?version=d5ae2750c2b477c2cf97dec7a826488e&quot; alt=&quot;shipbuilding&quot;&gt;造船术&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;240&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#colossus&quot;&gt;巨像&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#quadrireme&quot;&gt;四段帆船&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;拥有2艘桨帆船&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;允许所有陆地单位上船&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/0/0a/Icon_tech_mathematics.png/30px-Icon_tech_mathematics.png?version=bdf99af309e8b507cfe767e919b9c262&quot; alt=&quot;mathematics&quot;&gt;数学&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;240&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#petra&quot;&gt;佩特拉古城&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造3个不同的特色区域&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;所有海军单位+1移动力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/2/26/Icon_tech_construction.png/30px-Icon_tech_construction.png?version=ea4b86a11a62127106d9a5a67896fbf0&quot; alt=&quot;construction&quot;&gt;建造&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;240&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#terracotta_army&quot;&gt;兵马俑&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#siege_tower&quot;&gt;攻城塔&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造1个水磨&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/1/1a/Icon_tech_engineering.png/30px-Icon_tech_engineering.png?version=af8877b4f2b52309e8be155406586fa4&quot; alt=&quot;engineering&quot;&gt;工程&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;240&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#aqueduct&quot;&gt;水渠&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#catapult&quot;&gt;石弩&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造远古城墙&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;中世纪&quot;&gt;&lt;a href=&quot;#中世纪&quot; class=&quot;headerlink&quot; title=&quot;中世纪&quot;&gt;&lt;/a&gt;中世纪&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;科技&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;费用&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;区域&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;建筑&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;奇观&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;改良&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;单位&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特色&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;尤里卡&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特殊解锁&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;/font&gt;&lt;br&gt;&lt;/p&gt;
 </content>
     
