@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2019-02-19T01:46:54.755Z</updated>
+  <updated>2019-02-19T02:04:34.991Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://orionur.github.io/2019/02/17/11/"/>
     <id>http://orionur.github.io/2019/02/17/11/</id>
     <published>2019-02-17T07:51:12.000Z</published>
-    <updated>2019-02-19T01:46:54.755Z</updated>
+    <updated>2019-02-19T02:04:34.991Z</updated>
     
     <content type="html">&lt;p&gt;vgbaike的文明6百科挂了，找了一圈，没什么比较好的中文百科&lt;br&gt;索性自己弄一个，方便查找查看&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -858,6 +858,123 @@
 &lt;/table&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;h3 id=&quot;工业时代&quot;&gt;&lt;a href=&quot;#工业时代&quot; class=&quot;headerlink&quot; title=&quot;工业时代&quot;&gt;&lt;/a&gt;工业时代&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;科技&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;费用&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;区域&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;建筑&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;奇观&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;改良&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;单位&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特色&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;尤里卡&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;特殊解锁&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/0/0a/Icon_tech_industrialization.png/30px-Icon_tech_industrialization.png?version=c8d64b8da6d3b51ff56949256c2ef5bc&quot; alt=&quot;industrialization&quot;&gt;工业化&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1014&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#factory&quot;&gt;工厂&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#ruhr_valley&quot;&gt;鲁尔山谷&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造3座工作坊&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;矿山改良设施+1生产力，显示&lt;a href=&quot;#coal&quot;&gt;煤&lt;/a&gt;资源&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/8/8b/Icon_tech_scientific_theory.png/30px-Icon_tech_scientific_theory.png?version=12fe45b132abe3ae5d8c8794f50b6b10&quot; alt=&quot;scientific_theory&quot;&gt;科学理论&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1014&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#oxford_university&quot;&gt;牛津大学&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;拥有启蒙运动市政&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;种植园改良设施提供+1食物&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/2/29/Icon_tech_ballistics.png/30px-Icon_tech_ballistics.png?version=1334a1e57c1aa3649b614dd3dcc8828a&quot; alt=&quot;ballistics&quot;&gt;弹道学&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1014&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#field_cannon&quot;&gt;野战加农炮&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;使用军事工程师在领土中建设2座堡垒&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/b/b7/Icon_tech_military_science.png/30px-Icon_tech_military_science.png?version=3c52dbe5c48a8d14f1c12ca78e715179&quot; alt=&quot;military_science&quot;&gt;军事学&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1014&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#military_academy&quot;&gt;军事学院&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#cavalry&quot;&gt;骑兵&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;使用骑士击杀1个单位&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/3/3b/Icon_tech_steam_power.png/30px-Icon_tech_steam_power.png?version=a2cd310de73d201356619070b32b76f0&quot; alt=&quot;steam_power&quot;&gt;蒸汽动力&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1164&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#ironclad&quot;&gt;装甲舰&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造2座造船厂&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;水运单位+2移动力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/2/24/Icon_tech_sanitation.png/30px-Icon_tech_sanitation.png?version=e93295efc4c04a153bf109cf18a4d231&quot; alt=&quot;sanitation&quot;&gt;卫生设备&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1164&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#sewer&quot;&gt;下水道&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#medic&quot;&gt;医疗兵&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造2个社区&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;梯井改良设施+1住房&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/e/e9/Icon_tech_economics.png/30px-Icon_tech_economics.png?version=8991dd30bf014c920e94947421930957&quot; alt=&quot;economics&quot;&gt;经济&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1164&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#stock_exchange&quot;&gt;证券交易所&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#big_ben&quot;&gt;大本钟&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造2家银行&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://gamepedia.cursecdn.com/civ6_gamepedia_en/thumb/1/1d/Icon_tech_rifling.png/30px-Icon_tech_rifling.png?version=ede8f234f5378d71e3f30693188a96c0&quot; alt=&quot;rifling&quot;&gt;膛线&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1164&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;#ranger&quot;&gt;游骑兵&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;建造1座硝石矿&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;工业时代-1&quot;&gt;&lt;a href=&quot;#工业时代-1&quot; class=&quot;headerlink&quot; title=&quot;工业时代&quot;&gt;&lt;/a&gt;工业时代&lt;/h3&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
