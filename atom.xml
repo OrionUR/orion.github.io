@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2019-09-23T02:05:54.453Z</updated>
+  <updated>2019-09-23T02:15:16.934Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://orionur.github.io/2019/09/22/9/"/>
     <id>http://orionur.github.io/2019/09/22/9/</id>
     <published>2019-09-23T00:40:00.000Z</published>
-    <updated>2019-09-23T02:05:54.453Z</updated>
+    <updated>2019-09-23T02:15:16.934Z</updated>
     
     <content type="html">&lt;p&gt;本篇是关于使用git的笔记&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -39,11 +39,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;git relog&lt;/code&gt;：记录了每一次命令，可以用此命令查看过去的commit id&lt;br&gt;&lt;code&gt;git checkout -- &amp;lt;file&amp;gt;&lt;/code&gt;：把file文件恢复到之前的版本&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这里有两种情况&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;xxx修改后还没被放到暂存区，那么现在就会恢复到和仓库版本一模一样的状态&lt;/li&gt;
-&lt;li&gt;xxx已经添加到暂存区，但又接着修改，那么现在就会回复到和暂存区版本一模一样的状态&lt;br&gt;如果修改后又&lt;code&gt;git add&lt;/code&gt;添加到暂存区，但还没&lt;code&gt;git commit&lt;/code&gt;&lt;br&gt;那么可以用&lt;code&gt;git reset HEAD &amp;lt;file&amp;gt;&lt;/code&gt;把暂存区的修改撤销掉（unstage）&lt;br&gt;再用上边的方法恢复&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;这里有两种情况&lt;br&gt;(1) xxx修改后还没被放到暂存区，那么现在就会恢复到和仓库版本一模一样的状态&lt;br&gt;(2) xxx已经添加到暂存区，但又接着修改，那么现在就会回复到和暂存区版本一模一样的状态&lt;br&gt;如果修改后又&lt;code&gt;git add&lt;/code&gt;添加到暂存区，但还没&lt;code&gt;git commit&lt;/code&gt;&lt;br&gt;那么可以用&lt;code&gt;git reset HEAD &amp;lt;file&amp;gt;&lt;/code&gt;把暂存区的修改撤销掉（unstage）&lt;br&gt;再用上边的方法恢复&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;git rm &amp;lt;file&amp;gt;&lt;/code&gt;：把file文件从仓库中删除&lt;/p&gt;
 &lt;blockquote&gt;
@@ -99,7 +95,7 @@
     <link href="http://orionur.github.io/2016/06/03/7/"/>
     <id>http://orionur.github.io/2016/06/03/7/</id>
     <published>2016-06-03T16:40:01.000Z</published>
-    <updated>2019-09-23T02:10:44.127Z</updated>
+    <updated>2019-09-23T02:13:45.404Z</updated>
     
     <content type="html">&lt;p&gt;之前一直用的是Sublime Text 2，由于搜索的时候看到很多人说3好&lt;br&gt;于是打算捣鼓一下&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;本体&quot;&gt;&lt;a href=&quot;#本体&quot; class=&quot;headerlink&quot; title=&quot;本体&quot;&gt;&lt;/a&gt;本体&lt;/h3&gt;&lt;p&gt;首先遇到的问题是，brew-cask里没有Sublime Text 3&lt;br&gt;上网搜了下，找到了解决方法&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew tap caskroom/versions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew cask install sublime-text3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -224,15 +220,15 @@
     <link href="http://orionur.github.io/2016/05/18/5/"/>
     <id>http://orionur.github.io/2016/05/18/5/</id>
     <published>2016-05-18T23:07:37.000Z</published>
-    <updated>2016-05-18T22:08:37.000Z</updated>
+    <updated>2019-09-23T02:12:50.115Z</updated>
     
-    <content type="html">&lt;p&gt;Mac的terminal挺好用的，这种输入命令来执行各种强大的功能&lt;br&gt;让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）&lt;br&gt;但的确让我爱不释手&lt;br&gt;可是有个问题&lt;br&gt;每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西&lt;br&gt;毕竟还是在学习阶段，很多东西都需要重复去看&lt;br&gt;可是那一片黑底白字的命令让我有点眼花缭乱&lt;br&gt;上网搜了一下，有可以自定义终端提示符，于是尝试了一下&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;结果如下图&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;Mac的terminal挺好用的，这种输入命令来执行各种强大的功能&lt;br&gt;让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）&lt;br&gt;但的确让我爱不释手&lt;br&gt;可是有个问题&lt;br&gt;每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西&lt;br&gt;毕竟还是在学习阶段，很多东西都需要重复去看&lt;br&gt;可是那一片黑底白字的命令让我有点眼花缭乱&lt;br&gt;上网搜了一下，有可以自定义终端提示符，于是尝试了一下&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;结果如下图&lt;br&gt;&lt;img src=&quot;https://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;这里简单说明一下&lt;br&gt;&lt;code&gt;Gundam&lt;/code&gt;是我的主机名，&lt;code&gt;Orion&lt;/code&gt;是我的用户名，&lt;code&gt;~&lt;/code&gt;是当前路径&lt;br&gt;这些所有都可以自己编辑修改的&lt;br&gt;也就是说，终端提示符想怎么改怎么改，随你自己喜欢&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;有些人觉得自己的主机名很奇怪，想修改的话很简单&lt;br&gt;输入&lt;code&gt;sudo scutil --set HostName xxx&lt;/code&gt;，其中xxx为你想修改成的名字&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;直接在命令提示符输入&lt;code&gt;nano ~/.bash_profile&lt;/code&gt;会进入一个文本编辑器&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg&quot; alt=&quot;&quot;&gt;&lt;center&gt;大概长这样&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg&quot; alt=&quot;&quot;&gt;&lt;center&gt;大概长这样&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;以上的是我的自定义的代码，我简单解释一下&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;export PS1=&amp;quot;xxx&amp;quot;&lt;/code&gt;是将PS1这个控制提示符内容色彩显示的参数输出&lt;br&gt;简单来说，就是执行这个参数所设定的颜色，来改变终端提示符&lt;br&gt;要注意的是，&lt;strong&gt;这个是必不可缺并且不能修改的&lt;/strong&gt;&lt;/li&gt;

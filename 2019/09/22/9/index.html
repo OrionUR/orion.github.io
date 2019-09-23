@@ -65,7 +65,7 @@
 <meta property="og:url" content="http://orionur.github.io/2019/09/22/9/index.html">
 <meta property="og:site_name" content="Orion's Blog">
 <meta property="og:description" content="本篇是关于使用git的笔记">
-<meta property="og:updated_time" content="2019-09-23T02:05:54.453Z">
+<meta property="og:updated_time" content="2019-09-23T02:15:16.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git笔记">
 <meta name="twitter:description" content="本篇是关于使用git的笔记">
@@ -345,11 +345,7 @@
 </blockquote>
 <p><code>git relog</code>：记录了每一次命令，可以用此命令查看过去的commit id<br><code>git checkout -- &lt;file&gt;</code>：把file文件恢复到之前的版本</p>
 <blockquote>
-<p>这里有两种情况</p>
-<ol>
-<li>xxx修改后还没被放到暂存区，那么现在就会恢复到和仓库版本一模一样的状态</li>
-<li>xxx已经添加到暂存区，但又接着修改，那么现在就会回复到和暂存区版本一模一样的状态<br>如果修改后又<code>git add</code>添加到暂存区，但还没<code>git commit</code><br>那么可以用<code>git reset HEAD &lt;file&gt;</code>把暂存区的修改撤销掉（unstage）<br>再用上边的方法恢复</li>
-</ol>
+<p>这里有两种情况<br>(1) xxx修改后还没被放到暂存区，那么现在就会恢复到和仓库版本一模一样的状态<br>(2) xxx已经添加到暂存区，但又接着修改，那么现在就会回复到和暂存区版本一模一样的状态<br>如果修改后又<code>git add</code>添加到暂存区，但还没<code>git commit</code><br>那么可以用<code>git reset HEAD &lt;file&gt;</code>把暂存区的修改撤销掉（unstage）<br>再用上边的方法恢复</p>
 </blockquote>
 <p><code>git rm &lt;file&gt;</code>：把file文件从仓库中删除</p>
 <blockquote>

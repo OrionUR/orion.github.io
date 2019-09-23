@@ -65,13 +65,13 @@
 <meta property="og:url" content="http://orionur.github.io/2016/05/18/5/index.html">
 <meta property="og:site_name" content="Orion's Blog">
 <meta property="og:description" content="Mac的terminal挺好用的，这种输入命令来执行各种强大的功能让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）但的确让我爱不释手可是有个问题每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西毕竟还是在学习阶段，很多东西都需要重复去看可是那一片黑底白字的命令让我有点眼花缭乱上网搜了一下，有可以自定义终端提示符，于是尝试了一下">
-<meta property="og:image" content="http://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg">
-<meta property="og:updated_time" content="2016-05-18T22:08:37.000Z">
+<meta property="og:image" content="https://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg">
+<meta property="og:updated_time" content="2019-09-23T02:12:50.115Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自定义terminal的提示符">
 <meta name="twitter:description" content="Mac的terminal挺好用的，这种输入命令来执行各种强大的功能让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）但的确让我爱不释手可是有个问题每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西毕竟还是在学习阶段，很多东西都需要重复去看可是那一片黑底白字的命令让我有点眼花缭乱上网搜了一下，有可以自定义终端提示符，于是尝试了一下">
-<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg">
+<meta name="twitter:image" content="https://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg">
 
 
 
@@ -331,13 +331,13 @@
       
 
       
-        <p>Mac的terminal挺好用的，这种输入命令来执行各种强大的功能<br>让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）<br>但的确让我爱不释手<br>可是有个问题<br>每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西<br>毕竟还是在学习阶段，很多东西都需要重复去看<br>可是那一片黑底白字的命令让我有点眼花缭乱<br>上网搜了一下，有可以自定义终端提示符，于是尝试了一下<br><a id="more"></a><br>结果如下图<br><img src="http://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg" alt=""></p>
+        <p>Mac的terminal挺好用的，这种输入命令来执行各种强大的功能<br>让我有一种装逼的快感（虽然没人看到，估计妹纸也不会感兴趣）<br>但的确让我爱不释手<br>可是有个问题<br>每次我执行一堆命令后，想往回翻找找之前我都执行了哪些东西<br>毕竟还是在学习阶段，很多东西都需要重复去看<br>可是那一片黑底白字的命令让我有点眼花缭乱<br>上网搜了一下，有可以自定义终端提示符，于是尝试了一下<br><a id="more"></a><br>结果如下图<br><img src="https://ww3.sinaimg.cn/large/badbf5f3gw1f3z5jzt7u0j20fo01dglv.jpg" alt=""></p>
 <p>这里简单说明一下<br><code>Gundam</code>是我的主机名，<code>Orion</code>是我的用户名，<code>~</code>是当前路径<br>这些所有都可以自己编辑修改的<br>也就是说，终端提示符想怎么改怎么改，随你自己喜欢</p>
 <blockquote>
 <p>有些人觉得自己的主机名很奇怪，想修改的话很简单<br>输入<code>sudo scutil --set HostName xxx</code>，其中xxx为你想修改成的名字</p>
 </blockquote>
 <p>直接在命令提示符输入<code>nano ~/.bash_profile</code>会进入一个文本编辑器</p>
-<p><img src="http://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg" alt=""><center>大概长这样</center></p>
+<p><img src="https://ww4.sinaimg.cn/large/badbf5f3gw1f3z5tdzzkwj20h501lwep.jpg" alt=""><center>大概长这样</center></p>
 <p>以上的是我的自定义的代码，我简单解释一下</p>
 <ul>
 <li><code>export PS1=&quot;xxx&quot;</code>是将PS1这个控制提示符内容色彩显示的参数输出<br>简单来说，就是执行这个参数所设定的颜色，来改变终端提示符<br>要注意的是，<strong>这个是必不可缺并且不能修改的</strong></li>
