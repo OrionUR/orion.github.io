@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orionur.github.io/"/>
-  <updated>2016-12-24T21:26:47.000Z</updated>
+  <updated>2019-09-23T02:05:54.453Z</updated>
   <id>http://orionur.github.io/</id>
   
   <author>
@@ -14,6 +14,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git笔记</title>
+    <link href="http://orionur.github.io/2019/09/22/9/"/>
+    <id>http://orionur.github.io/2019/09/22/9/</id>
+    <published>2019-09-23T00:40:00.000Z</published>
+    <updated>2019-09-23T02:05:54.453Z</updated>
+    
+    <content type="html">&lt;p&gt;本篇是关于使用git的笔记&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;p&gt;由于我目前只使用Linux，所以这里只记录Linux安装Git的方法&lt;br&gt;直接在&lt;code&gt;terminal&lt;/code&gt;上输入&lt;code&gt;git&lt;/code&gt;，如果你没安装Git，就会有提示信息，告诉该怎么安装&lt;br&gt;如：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The program &amp;apos;git&amp;apos; is&amp;apos; is currently not installed. You can install it by typing:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Git命令&quot;&gt;&lt;a href=&quot;#Git命令&quot; class=&quot;headerlink&quot; title=&quot;Git命令&quot;&gt;&lt;/a&gt;Git命令&lt;/h2&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt;：创建仓库&lt;br&gt;&lt;code&gt;git add &amp;lt;file&amp;gt;&lt;/code&gt;：添加file到暂存区&lt;br&gt;&lt;code&gt;git commit&lt;/code&gt;：提交到仓库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提交到仓库，需要输入备注信息，最好如实输入，好方便以后管理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;：提交到GitHub上（如果你已经绑定了GitHub）&lt;br&gt;&lt;code&gt;git status&lt;/code&gt;：查看仓库当前的状态&lt;br&gt;&lt;code&gt;git diff &amp;lt;file&amp;gt;&lt;/code&gt;：对比file文件，跟上次提交到仓库里的，修改了什么内容&lt;br&gt;&lt;code&gt;git log&lt;/code&gt;：查看日志&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果觉得输出信息太多，可以加上&lt;code&gt;--pretty=oneline&lt;/code&gt;参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;git reset --hard HEAD^&lt;/code&gt;：&lt;code&gt;HEAD&lt;/code&gt;为当前版本，&lt;code&gt;HEAD^&lt;/code&gt;为之前一个版本，上上一个版本就是&lt;code&gt;HEAD^^&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果是往上100个版本，可以写成&lt;code&gt;HEAD~100&lt;/code&gt;&lt;br&gt;当然也可以用commit id来代替&lt;br&gt;如果上一个版本commit id为&lt;code&gt;1094adb&lt;/code&gt;，那么就可以用&lt;code&gt;1094adb&lt;/code&gt;代替&lt;code&gt;HEAD^&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;git relog&lt;/code&gt;：记录了每一次命令，可以用此命令查看过去的commit id&lt;br&gt;&lt;code&gt;git checkout -- &amp;lt;file&amp;gt;&lt;/code&gt;：把file文件恢复到之前的版本&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里有两种情况&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;xxx修改后还没被放到暂存区，那么现在就会恢复到和仓库版本一模一样的状态&lt;/li&gt;
+&lt;li&gt;xxx已经添加到暂存区，但又接着修改，那么现在就会回复到和暂存区版本一模一样的状态&lt;br&gt;如果修改后又&lt;code&gt;git add&lt;/code&gt;添加到暂存区，但还没&lt;code&gt;git commit&lt;/code&gt;&lt;br&gt;那么可以用&lt;code&gt;git reset HEAD &amp;lt;file&amp;gt;&lt;/code&gt;把暂存区的修改撤销掉（unstage）&lt;br&gt;再用上边的方法恢复&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;git rm &amp;lt;file&amp;gt;&lt;/code&gt;：把file文件从仓库中删除&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;要commit后才能确认删除，删错了可以用checkout恢复&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;GitHub&quot;&gt;&lt;a href=&quot;#GitHub&quot; class=&quot;headerlink&quot; title=&quot;GitHub&quot;&gt;&lt;/a&gt;GitHub&lt;/h2&gt;&lt;h5 id=&quot;1-创建SSH-Key&quot;&gt;&lt;a href=&quot;#1-创建SSH-Key&quot; class=&quot;headerlink&quot; title=&quot;1. 创建SSH Key&quot;&gt;&lt;/a&gt;1. 创建SSH Key&lt;/h5&gt;&lt;p&gt;在用户主目录里，查看是否有&lt;code&gt;id_rsa&lt;/code&gt;和&lt;code&gt;id_rsa.puh&lt;/code&gt;这两个文件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ls ~/.ssh/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果没有，则创建SSH Key&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ssh-keygen -t rsa -C “your email@example.com”&lt;br&gt;引号里填写的是你的Email地址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一路回车即可，如果提示你输入密码，可以不输入&lt;br&gt;若是不幸输入了，后边会教你怎么免密码登陆（我就是如此）&lt;br&gt;如果一切顺利，可以用上边查看命令看看&lt;code&gt;.ssh&lt;/code&gt;目录里，是否有&lt;code&gt;id_rsa&lt;/code&gt;和&lt;code&gt;id_rsa.puh&lt;/code&gt;这两个文件&lt;br&gt;这两个就是SSH Key的密钥对，&lt;code&gt;id_rsa&lt;/code&gt;是私钥，不能泄露出去&lt;br&gt;&lt;code&gt;id_rsa.puh&lt;/code&gt;是公钥，可以放心地告诉任何人&lt;/p&gt;
+&lt;h5 id=&quot;2-登陆GitHub，打开Account-settings——SSH-Keys页面&quot;&gt;&lt;a href=&quot;#2-登陆GitHub，打开Account-settings——SSH-Keys页面&quot; class=&quot;headerlink&quot; title=&quot;2. 登陆GitHub，打开Account settings——SSH Keys页面&quot;&gt;&lt;/a&gt;2. 登陆GitHub，打开Account settings——SSH Keys页面&lt;/h5&gt;&lt;p&gt;然后，点Add SSH Key，填上任意title，在Key文本框里粘贴&lt;code&gt;id_rsa.puh&lt;/code&gt;文件的内容&lt;/p&gt;
+&lt;h5 id=&quot;3-把本地仓库的内容，推送到GitHub仓库&quot;&gt;&lt;a href=&quot;#3-把本地仓库的内容，推送到GitHub仓库&quot; class=&quot;headerlink&quot; title=&quot;3. 把本地仓库的内容，推送到GitHub仓库&quot;&gt;&lt;/a&gt;3. 把本地仓库的内容，推送到GitHub仓库&lt;/h5&gt;&lt;p&gt;在本地仓库目录下运行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git remote add origin git@github.com:OrionUR/rmdir.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;origin后边的，是我的GitHub仓库，你要替换成自己的，否则你关联的就是我的仓库&lt;br&gt;至于右边那串东西怎么知道&lt;br&gt;从你创建的repository里，有个绿色的Clone or download选项&lt;br&gt;点开后选择右上方的Use SSH&lt;br&gt;就能看到属于你仓库的SSH Key了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由于远程仓库是空的，所以第一次推送master分支时，需要加上&lt;code&gt;-u&lt;/code&gt;参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;此后，每次本地提交，就可以使用&lt;code&gt;git push origin master&lt;/code&gt;推送最新修改&lt;/p&gt;
+&lt;h5 id=&quot;4-SSH警告&quot;&gt;&lt;a href=&quot;#4-SSH警告&quot; class=&quot;headerlink&quot; title=&quot;4. SSH警告&quot;&gt;&lt;/a&gt;4. SSH警告&lt;/h5&gt;&lt;p&gt;第一次使用&lt;code&gt;push&lt;/code&gt;命令链接GitHub时，会得到一个警告&lt;br&gt;输入&lt;code&gt;yes&lt;/code&gt;回车即可&lt;br&gt;如果之前有设置密码，那么会提示输入密码，直接输入即可&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以使用&lt;code&gt;ssh-add ~/.ssh/id_rsa&lt;/code&gt;命令配置免密登陆&lt;br&gt;这样以后&lt;code&gt;push&lt;/code&gt;就不会再要求输入密码了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://liaoxuefeng.com/wiki/896043488029600&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的官方网站&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇是关于使用git的笔记&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tech" scheme="http://orionur.github.io/categories/Tech/"/>
+    
+    
+      <category term="git" scheme="http://orionur.github.io/tags/git/"/>
+    
+      <category term="github" scheme="http://orionur.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>捣鼓Sublime Text 3</title>
