@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,GitHub,Mac," />
+  <meta name="keywords" content="git,github," />
 
 
 
@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac网上很多如何在Mac上创建hexo的教程，我也就不重复太多大家可以参考一下这个教程Mac下搭建Hexo博客教程大概讲一下我所遇到的问题">
+<meta name="description" content="本篇是关于使用git的笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客的迁移">
-<meta property="og:url" content="http://orionur.github.io/2016/05/10/2/index.html">
+<meta property="og:title" content="git笔记">
+<meta property="og:url" content="http://orionur.github.io/2019/09/22/8/index.html">
 <meta property="og:site_name" content="Orion's Blog">
-<meta property="og:description" content="由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac网上很多如何在Mac上创建hexo的教程，我也就不重复太多大家可以参考一下这个教程Mac下搭建Hexo博客教程大概讲一下我所遇到的问题">
-<meta property="og:updated_time" content="2016-05-18T03:03:44.000Z">
+<meta property="og:description" content="本篇是关于使用git的笔记">
+<meta property="og:updated_time" content="2019-09-23T02:15:16.934Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客的迁移">
-<meta name="twitter:description" content="由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac网上很多如何在Mac上创建hexo的教程，我也就不重复太多大家可以参考一下这个教程Mac下搭建Hexo博客教程大概讲一下我所遇到的问题">
+<meta name="twitter:title" content="git笔记">
+<meta name="twitter:description" content="本篇是关于使用git的笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 博客的迁移 | Orion's Blog </title>
+  <title> git笔记 | Orion's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +265,7 @@
             
             
               
-                博客的迁移
+                git笔记
               
             
           </h1>
@@ -276,8 +276,8 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <time itemprop="dateCreated" datetime="2016-05-10T18:15:28-07:00" content="2016-05-10">
-              2016-05-10
+            <time itemprop="dateCreated" datetime="2019-09-22T17:40:00-07:00" content="2019-09-22">
+              2019-09-22
             </time>
           </span>
 
@@ -305,8 +305,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/10/2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/2/" itemprop="commentsCount"></span>
+                <a href="/2019/09/22/8/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/09/22/8/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -328,19 +328,56 @@
       
 
       
-        <p>由于一系列的原因，我入了台MacBook Pro，开始练习使用Mac<br>网上很多如何在Mac上创建hexo的教程，我也就不重复太多<br>大家可以参考一下这个教程<a href="http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程" target="_blank" rel="external">Mac下搭建Hexo博客教程</a><br>大概讲一下我所遇到的问题</p>
+        <p>本篇是关于使用git的笔记</p>
 <a id="more"></a>
-<ul>
-<li>由于是第一次使用Mac，所以很多东西都不太懂<br>跟着教程走，安装git和安装node.js都没什么问题<br>可是在配置SSH的时候就出问题了<br>当我生成新的key文件后，他要求打开id_rsa.pub文件，复制里面的SSH key到Github<br>可是我怎么也找不到id_rsa.pub文件<br>后来经过搜索，原来是在terminal里输入<code>open .ssh</code>进入.ssh文件夹<br><font color="blue">注意: 必须是在与之前生成新key相同的目录下</font><br>之后就能成功连接到Github了</li>
-<li>遇到第二个问题是安装Hexo，不知道为什么一直提示出错<br>后来使用<code>sudo</code>命令在root权限下成功<br>之后就没什么其他大的问题了</li>
-<li>第三个问题是，我把原来我windows里hexo的文件全部拷贝过来替换<br>但是在执行<code>hexo s</code>的时候会出现一些error的信息<br>虽然不影响什么，但看着就是不爽<br>这时候只要重新<code>hexo g</code>一下就ok</li>
-<li>还有就是<code>hexo d</code>的时候，需要输入用户名和密码<br>输入密码的时候，由于不可看，所以要注意的是，大小写要用<code>caps lock</code>来切换<br>用<code>shift</code>并没有效果，我就是在此捣鼓了好久找原因<br>如果不想每次都输入用户名和密码，只要在hexo的配置文件<code>_config.yml</code>里<br>把<code>repo</code>的地址改成<code>git@github.com:xxx/xxx.github.io.git</code>即可</li>
-</ul>
-<p>至此，我的blog迁移到此为止，至此以后我会在MacBook上写博客<br>对于OS系统还在研究中，软件工具什么的也在筛选过程中<br>之后会把一些心得体会贴上来，以供参考</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>由于我目前只使用Linux，所以这里只记录Linux安装Git的方法<br>直接在<code>terminal</code>上输入<code>git</code>，如果你没安装Git，就会有提示信息，告诉该怎么安装<br>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git</span><br><span class="line">The program &apos;git&apos; is&apos; is currently not installed. You can install it by typing:</span><br><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure></p>
+<h2 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h2><p><code>git init</code>：创建仓库<br><code>git add &lt;file&gt;</code>：添加file到暂存区<br><code>git commit</code>：提交到仓库</p>
+<blockquote>
+<p>提交到仓库，需要输入备注信息，最好如实输入，好方便以后管理</p>
+</blockquote>
+<p><code>git push</code>：提交到GitHub上（如果你已经绑定了GitHub）<br><code>git status</code>：查看仓库当前的状态<br><code>git diff &lt;file&gt;</code>：对比file文件，跟上次提交到仓库里的，修改了什么内容<br><code>git log</code>：查看日志</p>
+<blockquote>
+<p>如果觉得输出信息太多，可以加上<code>--pretty=oneline</code>参数</p>
+</blockquote>
+<p><code>git reset --hard HEAD^</code>：<code>HEAD</code>为当前版本，<code>HEAD^</code>为之前一个版本，上上一个版本就是<code>HEAD^^</code></p>
+<blockquote>
+<p>如果是往上100个版本，可以写成<code>HEAD~100</code><br>当然也可以用commit id来代替<br>如果上一个版本commit id为<code>1094adb</code>，那么就可以用<code>1094adb</code>代替<code>HEAD^</code></p>
+</blockquote>
+<p><code>git relog</code>：记录了每一次命令，可以用此命令查看过去的commit id<br><code>git checkout -- &lt;file&gt;</code>：把file文件恢复到之前的版本</p>
+<blockquote>
+<p>这里有两种情况<br>(1) xxx修改后还没被放到暂存区，那么现在就会恢复到和仓库版本一模一样的状态<br>(2) xxx已经添加到暂存区，但又接着修改，那么现在就会回复到和暂存区版本一模一样的状态<br>如果修改后又<code>git add</code>添加到暂存区，但还没<code>git commit</code><br>那么可以用<code>git reset HEAD &lt;file&gt;</code>把暂存区的修改撤销掉（unstage）<br>再用上边的方法恢复</p>
+</blockquote>
+<p><code>git rm &lt;file&gt;</code>：把file文件从仓库中删除</p>
+<blockquote>
+<p>要commit后才能确认删除，删错了可以用checkout恢复</p>
+</blockquote>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h5 id="1-创建SSH-Key"><a href="#1-创建SSH-Key" class="headerlink" title="1. 创建SSH Key"></a>1. 创建SSH Key</h5><p>在用户主目录里，查看是否有<code>id_rsa</code>和<code>id_rsa.puh</code>这两个文件</p>
+<blockquote>
+<p>ls ~/.ssh/</p>
+</blockquote>
+<p>如果没有，则创建SSH Key</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C “your email@example.com”<br>引号里填写的是你的Email地址</p>
+</blockquote>
+<p>一路回车即可，如果提示你输入密码，可以不输入<br>若是不幸输入了，后边会教你怎么免密码登陆（我就是如此）<br>如果一切顺利，可以用上边查看命令看看<code>.ssh</code>目录里，是否有<code>id_rsa</code>和<code>id_rsa.puh</code>这两个文件<br>这两个就是SSH Key的密钥对，<code>id_rsa</code>是私钥，不能泄露出去<br><code>id_rsa.puh</code>是公钥，可以放心地告诉任何人</p>
+<h5 id="2-登陆GitHub，打开Account-settings——SSH-Keys页面"><a href="#2-登陆GitHub，打开Account-settings——SSH-Keys页面" class="headerlink" title="2. 登陆GitHub，打开Account settings——SSH Keys页面"></a>2. 登陆GitHub，打开Account settings——SSH Keys页面</h5><p>然后，点Add SSH Key，填上任意title，在Key文本框里粘贴<code>id_rsa.puh</code>文件的内容</p>
+<h5 id="3-把本地仓库的内容，推送到GitHub仓库"><a href="#3-把本地仓库的内容，推送到GitHub仓库" class="headerlink" title="3. 把本地仓库的内容，推送到GitHub仓库"></a>3. 把本地仓库的内容，推送到GitHub仓库</h5><p>在本地仓库目录下运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:OrionUR/rmdir.git</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>origin后边的，是我的GitHub仓库，你要替换成自己的，否则你关联的就是我的仓库<br>至于右边那串东西怎么知道<br>从你创建的repository里，有个绿色的Clone or download选项<br>点开后选择右上方的Use SSH<br>就能看到属于你仓库的SSH Key了</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>由于远程仓库是空的，所以第一次推送master分支时，需要加上<code>-u</code>参数</p>
+</blockquote>
+<p>此后，每次本地提交，就可以使用<code>git push origin master</code>推送最新修改</p>
+<h5 id="4-SSH警告"><a href="#4-SSH警告" class="headerlink" title="4. SSH警告"></a>4. SSH警告</h5><p>第一次使用<code>push</code>命令链接GitHub时，会得到一个警告<br>输入<code>yes</code>回车即可<br>如果之前有设置密码，那么会提示输入密码，直接输入即可</p>
+<blockquote>
+<p>可以使用<code>ssh-add ~/.ssh/id_rsa</code>命令配置免密登陆<br>这样以后<code>push</code>就不会再要求输入密码了</p>
+</blockquote>
 <hr>
 <p><strong>Reference</strong></p>
 <ul>
-<li><a href="http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程" target="_blank" rel="external">Mac下搭建Hexo博客教程</a></li>
+<li><a href="https://liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="external">廖雪峰的官方网站</a></li>
 </ul>
 
       
@@ -356,11 +393,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+            <a href="/tags/git/" rel="tag">#git</a>
           
-            <a href="/tags/GitHub/" rel="tag">#GitHub</a>
-          
-            <a href="/tags/Mac/" rel="tag">#Mac</a>
+            <a href="/tags/github/" rel="tag">#github</a>
           
         </div>
       
@@ -370,16 +405,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
               
-                <a href="/2016/04/28/1/" rel="next" title="安家立业">
-                  <i class="fa fa-chevron-left"></i> 安家立业
+                <a href="/2016/06/03/7/" rel="next" title="捣鼓Sublime Text 3">
+                  <i class="fa fa-chevron-left"></i> 捣鼓Sublime Text 3
                 </a>
               
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/14/3/" rel="prev" title="快捷键合集">
-                快捷键合集 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/10/03/9/" rel="prev" title="LeetCode简单算法笔记">
+                LeetCode简单算法笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -407,8 +442,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/10/2/"
-           data-title="博客的迁移" data-url="http://orionur.github.io/2016/05/10/2/">
+      <div class="ds-thread" data-thread-key="2019/09/22/8/"
+           data-title="git笔记" data-url="http://orionur.github.io/2019/09/22/8/">
       </div>
     
   </div>
@@ -537,7 +572,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Git"><span class="nav-number">1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git命令"><span class="nav-number">2.</span> <span class="nav-text">Git命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub"><span class="nav-number">3.</span> <span class="nav-text">GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-创建SSH-Key"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">1. 创建SSH Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-登陆GitHub，打开Account-settings——SSH-Keys页面"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">2. 登陆GitHub，打开Account settings——SSH Keys页面</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-把本地仓库的内容，推送到GitHub仓库"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">3. 把本地仓库的内容，推送到GitHub仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-SSH警告"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">4. SSH警告</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
